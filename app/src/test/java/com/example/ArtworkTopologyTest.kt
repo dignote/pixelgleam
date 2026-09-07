@@ -15,6 +15,7 @@ import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import org.junit.runner.RunWith
+import org.json.JSONObject
 import org.robolectric.RobolectricTestRunner
 import org.robolectric.annotation.Config
 
@@ -244,11 +245,18 @@ class ArtworkTopologyTest {
             java.io.File(b4Dir, "settled_texture.png").copyTo(java.io.File(canaryDir, "settled_texture.png"), overwrite = true)
             java.io.File(b4Dir, "subject_mask.png").copyTo(java.io.File(canaryDir, "subject_mask.png"), overwrite = true)
 
-            val originalJson = java.io.File(b4Dir, "artwork.json").readText()
-            val canaryJson = originalJson
-                .replace("\"id\": \"B4_food\"", "\"id\": \"AUTO_DISCOVERY_TEST\"")
-                .replace("\"title\": \"B4_food\"", "\"title\": \"Canary Test\"")
-                .replace("\"category\": \"benchmark\"", "\"categoryId\": \"canary_category\",\n  \"categoryLabel\": \"Canary Category\",\n  \"category\": \"benchmark\"")
+            val canaryJson = JSONObject(java.io.File(b4Dir, "artwork.json").readText())
+                .apply {
+                    // Edit parsed metadata so this canary remains valid when benchmark metadata evolves.
+                    put("id", "AUTO_DISCOVERY_TEST")
+                    put("title", "Canary Test")
+                    put("categoryId", "canary_category")
+                    put("categoryLabel", "Canary Category")
+                    put("category", "canary_category")
+                    put("lifecycle", "active")
+                    put("galleryVisible", true)
+                }
+                .toString(2)
 
             java.io.File(canaryDir, "artwork.json").writeText(canaryJson)
 

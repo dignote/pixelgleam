@@ -313,17 +313,30 @@ class AssetArtworkRepository(private val context: Context) : ArtworkRepository {
 
             // Parse category and title
             val title = jsonObj.optString("title", id.replace('_', ' ').replaceFirstChar { if (it.isLowerCase()) it.titlecase() else it.toString() })
-            val categoryId = jsonObj.optString("categoryId", jsonObj.optString("category", "general"))
+            val rawCategory = jsonObj.optString("category", "")
+            val explicitCategoryId = jsonObj.optString("categoryId", "")
+            val categoryId = explicitCategoryId.ifEmpty { canonicalLegacyCategoryId(rawCategory) }
             val categoryLabel = if (jsonObj.has("categoryLabel")) {
                 jsonObj.getString("categoryLabel")
             } else {
-                mapCategoryToLabel(categoryId, jsonObj.optString("category", ""))
+                mapCategoryToLabel(categoryId, rawCategory)
             }
 
             val sortOrder = if (jsonObj.has("sortOrder")) jsonObj.getInt("sortOrder") else Int.MAX_VALUE
             val releaseOrder = if (jsonObj.has("releaseOrder")) jsonObj.getInt("releaseOrder") else Int.MAX_VALUE
-            val lifecycle = jsonObj.optString("lifecycle", "active")
-            val galleryVisible = jsonObj.optBoolean("galleryVisible", true)
+            val legacyBenchmark = isLegacyBenchmark(categoryId, rawCategory)
+            val lifecycle = if (jsonObj.has("lifecycle")) {
+                jsonObj.optString("lifecycle", "active")
+            } else if (legacyBenchmark) {
+                "internal"
+            } else {
+                "active"
+            }
+            val galleryVisible = if (jsonObj.has("galleryVisible")) {
+                jsonObj.optBoolean("galleryVisible", true)
+            } else {
+                !legacyBenchmark
+            }
 
             seenIds.add(id)
             discovered.add(
@@ -420,18 +433,39 @@ class AssetArtworkRepository(private val context: Context) : ArtworkRepository {
         }
     }
 
+    private fun canonicalLegacyCategoryId(rawCategory: String): String {
+        val key = rawCategory.lowercase()
+        return when {
+            key == "legacy_retired" -> "legacy_retired"
+            key.contains("benchmark") -> "internal_benchmark"
+            key.contains("animal") || key.contains("pet") -> "animals_friends"
+            key.contains("cozy") || key.contains("scene") || key.contains("object") -> "cozy_scenes"
+            key.contains("food") || key.contains("treat") -> "food_treats"
+            key.contains("character") || key.contains("avatar") -> "characters"
+            key.contains("flower") || key.contains("botanical") || key.contains("nature") -> "flowers_nature"
+            key.contains("ornamental") || key.contains("pattern") || key.contains("symmetry") -> "ornamental_patterns"
+            key.contains("mandala") || key.contains("geometric") -> "geometric_mandalas"
+            else -> "general"
+        }
+    }
+
+    private fun isLegacyBenchmark(categoryId: String, rawCategory: String): Boolean =
+        categoryId.equals("benchmark", ignoreCase = true) ||
+            categoryId.equals("internal_benchmark", ignoreCase = true) ||
+            rawCategory.equals("benchmark", ignoreCase = true)
+
     private fun mapCategoryToLabel(categoryId: String, rawCategory: String): String {
         val key = (if (categoryId.isNotEmpty()) categoryId else rawCategory).lowercase()
         return when {
-            key.contains("animal") || key.contains("pet") -> "Animals & Friends"
-            key.contains("cozy") || key.contains("scene") || key.contains("object") -> "Cozy Scenes"
-            key.contains("food") || key.contains("treat") -> "Food & Treats"
-            key.contains("character") || key.contains("avatar") -> "Characters"
-            key.contains("flower") || key.contains("botanical") || key.contains("nature") -> "Flowers & Nature"
-            key.contains("ornamental") || key.contains("pattern") || key.contains("symmetry") -> "Ornamental Patterns"
-            key.contains("mandala") || key.contains("geometric") -> "Geometric Mandalas"
             key == "internal_benchmark" -> "Internal Benchmark"
             key == "legacy_retired" -> "Legacy Retired"
+            key == "animals_friends" || key.contains("animal") || key.contains("pet") -> "Animals & Friends"
+            key == "cozy_scenes" || key.contains("cozy") || key.contains("scene") || key.contains("object") -> "Cozy Scenes"
+            key == "food_treats" || key.contains("food") || key.contains("treat") -> "Food & Treats"
+            key == "characters" || key.contains("character") || key.contains("avatar") -> "Characters"
+            key == "flowers_nature" || key.contains("flower") || key.contains("botanical") || key.contains("nature") -> "Flowers & Nature"
+            key == "ornamental_patterns" || key.contains("ornamental") || key.contains("pattern") || key.contains("symmetry") -> "Ornamental Patterns"
+            key == "geometric_mandalas" || key.contains("mandala") || key.contains("geometric") -> "Geometric Mandalas"
             else -> "General"
         }
     }

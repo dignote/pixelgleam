@@ -16,23 +16,55 @@ BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 ARTWORKS_DIR = os.path.join(BASE_DIR, "app", "src", "main", "assets", "artworks")
 CATALOG_PATH = os.path.join(ARTWORKS_DIR, "catalog.json")
 
+def canonical_legacy_category_id(raw_category: str) -> str:
+    """Maps pre-taxonomy category values onto the canonical gallery taxonomy."""
+    key = raw_category.lower()
+    if key == "legacy_retired":
+        return "legacy_retired"
+    if "benchmark" in key:
+        return "internal_benchmark"
+    if "animal" in key or "pet" in key:
+        return "animals_friends"
+    if "cozy" in key or "scene" in key or "object" in key:
+        return "cozy_scenes"
+    if "food" in key or "treat" in key:
+        return "food_treats"
+    if "character" in key or "avatar" in key:
+        return "characters"
+    if "flower" in key or "botanical" in key or "nature" in key:
+        return "flowers_nature"
+    if "ornamental" in key or "pattern" in key or "symmetry" in key:
+        return "ornamental_patterns"
+    if "mandala" in key or "geometric" in key:
+        return "geometric_mandalas"
+    return "general"
+
+
 def map_category_to_label(category_id: str, raw_category: str) -> str:
     key = (category_id if category_id else raw_category).lower()
-    if "animal" in key or "pet" in key:
-        return "Animals & Companions"
-    if "object" in key or "scene" in key:
-        return "Objects & Scenes"
-    if "symmetry" in key or "pattern" in key:
-        return "Symmetry & Patterns"
-    if "food" in key:
-        return "Food & Still Life"
-    if "character" in key or "avatar" in key:
-        return "Characters & Avatars"
-    if "botanical" in key or "nature" in key or "flower" in key:
-        return "Botanical & Nature"
-    if "benchmark" in key or "geometric" in key:
-        return "Symmetric Geometric"
+    if key == "internal_benchmark":
+        return "Internal Benchmark"
+    if key == "legacy_retired":
+        return "Legacy Retired"
+    if key == "animals_friends" or "animal" in key or "pet" in key:
+        return "Animals & Friends"
+    if key == "cozy_scenes" or "cozy" in key or "scene" in key or "object" in key:
+        return "Cozy Scenes"
+    if key == "food_treats" or "food" in key or "treat" in key:
+        return "Food & Treats"
+    if key == "characters" or "character" in key or "avatar" in key:
+        return "Characters"
+    if key == "flowers_nature" or "botanical" in key or "nature" in key or "flower" in key:
+        return "Flowers & Nature"
+    if key == "ornamental_patterns" or "ornamental" in key or "pattern" in key or "symmetry" in key:
+        return "Ornamental Patterns"
+    if key == "geometric_mandalas" or "mandala" in key or "geometric" in key:
+        return "Geometric Mandalas"
     return "General"
+
+
+def is_legacy_benchmark(category_id: str, raw_category: str) -> bool:
+    return category_id.lower() in {"benchmark", "internal_benchmark"} or raw_category.lower() == "benchmark"
 
 def generate_thumbnail(texture_path: str, thumbnail_path: str) -> bool:
     """Generates a deterministic 256x256 WebP thumbnail using convert or ffmpeg."""
@@ -92,8 +124,14 @@ def main():
             sys.exit(1)
 
         title = data.get("title", aid.replace("_", " ").title())
-        category_id = data.get("categoryId", data.get("category", "general"))
-        category_label = data.get("categoryLabel", map_category_to_label(category_id, data.get("category", "")))
+        raw_category = data.get("category", "")
+        explicit_category_id = data.get("categoryId")
+        category_id = explicit_category_id if explicit_category_id else canonical_legacy_category_id(raw_category)
+        explicit_category_label = data.get("categoryLabel")
+        category_label = explicit_category_label if explicit_category_label else map_category_to_label(category_id, raw_category)
+        legacy_benchmark = is_legacy_benchmark(category_id, raw_category)
+        lifecycle = data["lifecycle"] if "lifecycle" in data else ("internal" if legacy_benchmark else "active")
+        gallery_visible = data["galleryVisible"] if "galleryVisible" in data else not legacy_benchmark
         sort_order = data.get("sortOrder", 2147483647)
         release_order = data.get("releaseOrder", 2147483647)
         version = data.get("version", "1.0")
@@ -107,10 +145,10 @@ def main():
             print(f"ERROR: Package {aid} has 0 cells or regions", file=sys.stderr)
             sys.exit(1)
 
-        # Generate thumbnail.webp if missing or outdated
+        # Immutable production thumbnails are authoritative. Generate only when absent.
         texture_path = os.path.join(folder_path, "settled_texture.png")
         thumbnail_path = os.path.join(folder_path, "thumbnail.webp")
-        if not os.path.exists(thumbnail_path) or os.path.getmtime(texture_path) > os.path.getmtime(thumbnail_path):
+        if not os.path.exists(thumbnail_path):
             print(f"Generating thumbnail for {aid}...")
             ok = generate_thumbnail(texture_path, thumbnail_path)
             if not ok:
@@ -121,6 +159,8 @@ def main():
             "title": title,
             "categoryId": category_id,
             "categoryLabel": category_label,
+            "lifecycle": lifecycle,
+            "galleryVisible": gallery_visible,
             "sortOrder": sort_order,
             "releaseOrder": release_order,
             "totalCells": total_cells,

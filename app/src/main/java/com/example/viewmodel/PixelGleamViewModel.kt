@@ -132,6 +132,7 @@ class PixelGleamViewModel(
 
     private val _dailyInfo = MutableStateFlow<DailyChallengeInfo?>(null)
     val dailyInfo: StateFlow<DailyChallengeInfo?> = _dailyInfo.asStateFlow()
+    private val dailyAssignmentWrites = mutableSetOf<String>()
 
     private val _artworkList = MutableStateFlow<List<ArtworkInfo>>(emptyList())
     val artworkList: StateFlow<List<ArtworkInfo>> = _artworkList.asStateFlow()
@@ -387,17 +388,35 @@ class PixelGleamViewModel(
                 Pair(summaries, dailyList)
             }.collectLatest { (summaries, dailyList) ->
                 _artworkSummaries.value = summaries
-                _dailyInfo.value = computeDailyChallenge(summaries, dailyList)
+                val calendar = Calendar.getInstance()
+                val dailyChallenge = computeDailyChallenge(summaries, dailyList, calendar)
+                _dailyInfo.value = dailyChallenge
+
+                if (dailyChallenge != null) {
+                    val todayDateKey = formatDateKey(calendar)
+                    if (dailyList.none { it.dateString == todayDateKey } &&
+                        dailyAssignmentWrites.add(todayDateKey)
+                    ) {
+                        viewModelScope.launch {
+                            repository.saveDailyProgress(
+                                dateString = todayDateKey,
+                                artworkId = dailyChallenge.featuredArtwork.id,
+                                isCompleted = false
+                            )
+                        }
+                    }
+                }
             }
         }
     }
 
     private fun computeDailyChallenge(
         summaries: List<ArtworkSummaryItem>,
-        persistedDailyList: List<DailyProgress> = emptyList()
+        persistedDailyList: List<DailyProgress> = emptyList(),
+        calendar: Calendar = Calendar.getInstance()
     ): DailyChallengeInfo? {
         if (summaries.isEmpty()) return null
-        val calendar = Calendar.getInstance()
+        val eligibleSummaries = summaries.filter { it.lifecycle == "active" && it.galleryVisible }
         val dayOfYear = calendar.get(Calendar.DAY_OF_YEAR)
         val dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH)
         val dayOfWeekInt = calendar.get(Calendar.DAY_OF_WEEK)
@@ -409,16 +428,16 @@ class PixelGleamViewModel(
         val dateFormatted = "$dayOfWeek, $monthName $dayOfMonth"
 
         val year = calendar.get(Calendar.YEAR)
-        val todayDateKey = String.format("%04d-%02d-%02d", year, calendar.get(Calendar.MONTH) + 1, dayOfMonth)
+        val todayDateKey = formatDateKey(calendar)
         val todaySeed = "daily_${year}_${dayOfYear}"
         
         // Check if there is an explicit persisted assignment for today; otherwise deterministic HRW
         val persistedToday = persistedDailyList.firstOrNull { it.dateString == todayDateKey }
-        val featuredArtwork = if (persistedToday != null) {
-            summaries.firstOrNull { it.id == persistedToday.artworkId } ?: selectDailyArtworkByHrw(todaySeed, summaries)
-        } else {
-            selectDailyArtworkByHrw(todaySeed, summaries)
-        }
+        val featuredArtwork = persistedToday
+            ?.let { persisted -> summaries.firstOrNull { it.id == persisted.artworkId } }
+            ?: eligibleSummaries.takeIf { it.isNotEmpty() }
+                ?.let { selectDailyArtworkByHrw(todaySeed, it) }
+            ?: return null
 
         val weeklyDays = ArrayList<DayChallengeItem>()
         val tempCal = calendar.clone() as Calendar
@@ -431,14 +450,14 @@ class PixelGleamViewModel(
             val dOfMonth = tempCal.get(Calendar.DAY_OF_MONTH)
             val dYear = tempCal.get(Calendar.YEAR)
             val isToday = (dOfYear == dayOfYear) && (dYear == year)
-            val dDateKey = String.format("%04d-%02d-%02d", dYear, tempCal.get(Calendar.MONTH) + 1, dOfMonth)
+            val dDateKey = formatDateKey(tempCal)
             val dSeed = "daily_${dYear}_${dOfYear}"
             val persistedDay = persistedDailyList.firstOrNull { it.dateString == dDateKey }
-            val artItem = if (persistedDay != null) {
-                summaries.firstOrNull { it.id == persistedDay.artworkId } ?: selectDailyArtworkByHrw(dSeed, summaries)
-            } else {
-                selectDailyArtworkByHrw(dSeed, summaries)
-            }
+            val artItem = persistedDay
+                ?.let { persisted -> summaries.firstOrNull { it.id == persisted.artworkId } }
+                ?: eligibleSummaries.takeIf { it.isNotEmpty() }
+                    ?.let { selectDailyArtworkByHrw(dSeed, it) }
+                ?: return null
             weeklyDays.add(
                 DayChallengeItem(
                     dayLabel = shortDayLabels[i],
@@ -459,6 +478,13 @@ class PixelGleamViewModel(
             weeklyDays = weeklyDays
         )
     }
+
+    private fun formatDateKey(calendar: Calendar): String = String.format(
+        "%04d-%02d-%02d",
+        calendar.get(Calendar.YEAR),
+        calendar.get(Calendar.MONTH) + 1,
+        calendar.get(Calendar.DAY_OF_MONTH)
+    )
 
     private fun selectDailyArtworkByHrw(dateSeed: String, summaries: List<ArtworkSummaryItem>): ArtworkSummaryItem {
         return summaries.maxByOrNull { item ->

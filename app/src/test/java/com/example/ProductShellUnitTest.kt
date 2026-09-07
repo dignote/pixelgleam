@@ -16,6 +16,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.withTimeout
 import kotlinx.coroutines.test.StandardTestDispatcher
 import kotlinx.coroutines.test.resetMain
 import kotlinx.coroutines.test.setMain
@@ -33,6 +35,7 @@ import org.robolectric.annotation.Config
 
 @RunWith(RobolectricTestRunner::class)
 @Config(sdk = [36])
+@OptIn(ExperimentalCoroutinesApi::class)
 class ProductShellUnitTest {
 
     private lateinit var context: Context
@@ -40,9 +43,11 @@ class ProductShellUnitTest {
     private lateinit var database: AppDatabase
     private lateinit var progressRepository: ArtworkProgressRepository
     private lateinit var settingsRepository: AppSettingsRepository
+    private val mainDispatcher = StandardTestDispatcher()
 
     @Before
     fun setup() {
+        Dispatchers.setMain(mainDispatcher)
         context = ApplicationProvider.getApplicationContext()
         application = ApplicationProvider.getApplicationContext()
         database = Room.inMemoryDatabaseBuilder(context, AppDatabase::class.java)
@@ -55,6 +60,40 @@ class ProductShellUnitTest {
     @After
     fun tearDown() {
         database.close()
+        Dispatchers.resetMain()
+    }
+
+    private suspend fun awaitNonEmptySummaries(
+        viewModel: PixelGleamViewModel
+    ): List<com.example.ui.shell.ArtworkSummaryItem> = withTimeout(10_000) {
+        while (viewModel.artworkSummaries.value.isEmpty()) {
+            mainDispatcher.scheduler.runCurrent()
+            delay(10)
+        }
+        viewModel.artworkSummaries.value
+    }
+
+    private suspend fun awaitDailyInfo(
+        viewModel: PixelGleamViewModel,
+        artworkId: String? = null
+    ) = withTimeout(10_000) {
+        while (viewModel.dailyInfo.value == null ||
+            (artworkId != null && viewModel.dailyInfo.value?.featuredArtwork?.id != artworkId)
+        ) {
+            mainDispatcher.scheduler.runCurrent()
+            delay(10)
+        }
+        viewModel.dailyInfo.value
+    }
+
+    private suspend fun awaitPersistedDailyAssignment(dateKey: String) = withTimeout(10_000) {
+        var persisted = progressRepository.getDailyProgress(dateKey)
+        while (persisted == null) {
+            mainDispatcher.scheduler.runCurrent()
+            delay(10)
+            persisted = progressRepository.getDailyProgress(dateKey)
+        }
+        persisted
     }
 
     @Test
@@ -166,7 +205,7 @@ class ProductShellUnitTest {
         assertEquals(372, bear?.totalCells)
 
         // Wait for initial dailyInfo emission
-        val dailyInfo = viewModel.dailyInfo.first { it != null }
+        val dailyInfo = awaitDailyInfo(viewModel)
         assertNotNull(dailyInfo)
         assertNotNull(dailyInfo?.featuredArtwork)
         assertEquals(7, dailyInfo?.weeklyDays?.size)
@@ -177,7 +216,7 @@ class ProductShellUnitTest {
         val todayKey = String.format("%04d-%02d-%02d", calendar.get(java.util.Calendar.YEAR), calendar.get(java.util.Calendar.MONTH) + 1, calendar.get(java.util.Calendar.DAY_OF_MONTH))
         progressRepository.saveDailyProgress(todayKey, "gentle_bear_v2", false)
 
-        val updatedDailyInfo = viewModel.dailyInfo.first { it?.featuredArtwork?.id == "gentle_bear_v2" }
+        val updatedDailyInfo = awaitDailyInfo(viewModel, "gentle_bear_v2")
         assertNotNull(updatedDailyInfo)
         assertEquals("gentle_bear_v2", updatedDailyInfo?.featuredArtwork?.id)
     }
@@ -229,11 +268,20 @@ class ProductShellUnitTest {
     fun testAllCatalogArtworks_LoadInViewModelSuccessfully() = runBlocking {
         val viewModel = PixelGleamViewModel(application, database)
 
-        for (item in viewModel.catalogItems) {
+        val catalogItems = withTimeout(10_000) {
+            while (viewModel.catalogItems.isEmpty()) {
+                mainDispatcher.scheduler.runCurrent()
+                delay(10)
+            }
+            viewModel.catalogItems
+        }
+
+        for (item in catalogItems) {
             viewModel.selectArtwork(item.id)
             var attempts = 0
             while (viewModel.loadState.value !is GameLoadState.Success && attempts < 100) {
-                kotlinx.coroutines.delay(50)
+                mainDispatcher.scheduler.runCurrent()
+                delay(50)
                 attempts++
             }
             val state = viewModel.loadState.value
@@ -246,8 +294,15 @@ class ProductShellUnitTest {
     fun testArtworkMetadataNormalizationAndGalleryFiltering() = runBlocking {
         val viewModel = PixelGleamViewModel(application, database)
 
-        val fullSummaries = viewModel.artworkSummaries.first { it.isNotEmpty() }
-        val gallerySummaries = viewModel.galleryArtworkSummaries.first { it.isNotEmpty() }
+        val fullSummaries = awaitNonEmptySummaries(viewModel)
+        mainDispatcher.scheduler.runCurrent()
+        val gallerySummaries = withTimeout(10_000) {
+            while (viewModel.galleryArtworkSummaries.value.isEmpty()) {
+                mainDispatcher.scheduler.runCurrent()
+                delay(10)
+            }
+            viewModel.galleryArtworkSummaries.value
+        }
 
         // Full catalog summaries must include internal/retired artworks
         val internalItem = fullSummaries.firstOrNull { it.id == "B2_flower" }
@@ -272,5 +327,66 @@ class ProductShellUnitTest {
         val cozyIndex = com.example.data.repository.CategoryTaxonomyContract.getCategoryOrderIndex("cozy_scenes")
         assertTrue("animals_friends comes before cozy_scenes", animalsIndex < cozyIndex)
         assertEquals(Int.MAX_VALUE, com.example.data.repository.CategoryTaxonomyContract.getCategoryOrderIndex("unknown_category"))
+    }
+
+    @Test
+    fun testSevenProductionArtworksHaveCanonicalCatalogAndGalleryMetadata() = runBlocking {
+        val expectedMetadata = mapOf(
+            "sakura_cat_window" to ("animals_friends" to "Animals & Friends"),
+            "rainy_bookshop" to ("cozy_scenes" to "Cozy Scenes"),
+            "matcha_tea_set" to ("food_treats" to "Food & Treats"),
+            "forest_witch" to ("characters" to "Characters"),
+            "hummingbird_hibiscus" to ("flowers_nature" to "Flowers & Nature"),
+            "butterfly_bloom" to ("ornamental_patterns" to "Ornamental Patterns"),
+            "aurora_mandala" to ("geometric_mandalas" to "Geometric Mandalas")
+        )
+        val viewModel = PixelGleamViewModel(application, database)
+        val catalog = viewModel.catalogRepository.getCatalog().first()
+        val dynamicCatalog = com.example.data.repository.AssetArtworkRepository(context).scanDynamicCatalog()
+        val galleryIds = awaitNonEmptySummaries(viewModel)
+            .filter { it.lifecycle == "active" && it.galleryVisible }
+            .map { it.id }
+            .toSet()
+
+        expectedMetadata.forEach { (id, expected) ->
+            val (categoryId, categoryLabel) = expected
+            val catalogItems = catalog.filter { it.id == id }
+            val dynamicItems = dynamicCatalog.filter { it.id == id }
+            assertEquals("Catalog must contain $id exactly once", 1, catalogItems.size)
+            assertEquals("Dynamic discovery must contain $id exactly once", 1, dynamicItems.size)
+
+            val catalogItem = catalogItems.single()
+            val dynamicItem = dynamicItems.single()
+            assertEquals(categoryId, catalogItem.categoryId)
+            assertEquals(categoryLabel, catalogItem.category)
+            assertEquals("active", catalogItem.lifecycle)
+            assertTrue(catalogItem.galleryVisible)
+            assertEquals("Catalog and package category IDs must agree for $id", categoryId, dynamicItem.categoryId)
+            assertEquals("Catalog and package labels must agree for $id", categoryLabel, dynamicItem.category)
+            assertEquals("Catalog and package lifecycle must agree for $id", catalogItem.lifecycle, dynamicItem.lifecycle)
+            assertEquals("Catalog and package gallery visibility must agree for $id", catalogItem.galleryVisible, dynamicItem.galleryVisible)
+            assertTrue("Active gallery artwork $id must be displayed in Gallery", id in galleryIds)
+        }
+    }
+
+    @Test
+    fun testDailyAssignmentUsesEligibleArtworkAndPersistsInitialHrwWinner() = runBlocking {
+        val viewModel = PixelGleamViewModel(application, database)
+        val daily = awaitDailyInfo(viewModel)
+        val featured = checkNotNull(daily?.featuredArtwork)
+
+        assertEquals("Daily HRW candidate must be active", "active", featured.lifecycle)
+        assertTrue("Daily HRW candidate must be gallery-visible", featured.galleryVisible)
+
+        val calendar = java.util.Calendar.getInstance()
+        val todayKey = String.format(
+            "%04d-%02d-%02d",
+            calendar.get(java.util.Calendar.YEAR),
+            calendar.get(java.util.Calendar.MONTH) + 1,
+            calendar.get(java.util.Calendar.DAY_OF_MONTH)
+        )
+        val persisted = awaitPersistedDailyAssignment(todayKey)
+        assertEquals("Initial HRW winner must be locked to today's date", featured.id, persisted.artworkId)
+        assertFalse("A new Daily assignment must not start completed", persisted.isCompleted)
     }
 }
