@@ -1,0 +1,14 @@
+{
+  "artwork": "A5_lucky_shiba_garden",
+  "coveragePct": 100.0,
+  "cells": 383,
+  "regions": 135,
+  "colors": 14,
+  "disconnectedCells": 0,
+  "disconnectedRegions": 0,
+  "sameColorTouchConflicts": 0,
+  "cellAnchorFailures": 0,
+  "regionAnchorFailures": 0,
+  "allCanvasPixelsPlayable": true,
+  "status": "PASS"
+}

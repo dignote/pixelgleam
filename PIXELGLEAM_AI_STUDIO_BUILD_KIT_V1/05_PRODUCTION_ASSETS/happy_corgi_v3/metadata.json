@@ -1,0 +1,12 @@
+{
+  "id": "happy_corgi_v3",
+  "version": "3.9",
+  "status": "APPROVED",
+  "topology": "MASTER_DERIVED_CELL_ID_MAP",
+  "hitTest": "cell_id_map_lookup",
+  "settledRender": "preauthored_master_texture_reveal",
+  "cellCount": 347,
+  "regionCount": 43,
+  "sourceMaster": "HAPPY_CORGI_MASTER_CROP.png",
+  "colorSource": "numbered_master_reference"
+}

@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "geometry": {
+    "width": 1254,
+    "height": 1254,
+    "subjectPixels": 532546,
+    "coveragePercent": 100.0,
+    "uncoveredPixels": 0,
+    "backgroundLabeledPixels": 0,
+    "cellCount": 359,
+    "regionCount": 32,
+    "overlapPixels": 0
+  },
+  "checks": {
+    "cellIdSetMatchesArtworkJson": true,
+    "cellIdsConsecutive": true,
+    "cellConnectivity": true,
+    "adjacencySymmetry": true,
+    "adjacencyExactRasterVsJson": true,
+    "regionColorConsistency": true,
+    "regionConnectivity": true,
+    "regionsAreMaximalSameColorComponents": true,
+    "settledTextureMasterExact": true,
+    "settledBackgroundTransparent": true,
+    "expectedGoldenMetricsMatch": true
+  },
+  "blockers": [],
+  "majors": [],
+  "fixture": {
+    "artworkId": "B4_food",
+    "version": "compiler-v1.0",
+    "topologyType": "cell-id-raster-v1"
+  }
+}

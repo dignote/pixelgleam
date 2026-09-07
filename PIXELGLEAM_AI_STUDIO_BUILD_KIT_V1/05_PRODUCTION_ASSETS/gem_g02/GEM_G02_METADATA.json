@@ -1,0 +1,48 @@
+{
+  "id": "GEM_G02",
+  "name": "Pixel Jewel Cut",
+  "version": "3.0",
+  "status": "APPROVED",
+  "canonical_source": "gem_master_red.png",
+  "source_generation": "a_clean_high_resolution_ultra_detailed_digital_i.png",
+  "format": "PNG RGBA",
+  "transparent_background": true,
+  "variants": [
+    "gem_red.png",
+    "gem_orange.png",
+    "gem_yellow.png",
+    "gem_green.png",
+    "gem_aqua.png",
+    "gem_blue.png",
+    "gem_purple.png",
+    "gem_pink.png"
+  ],
+  "runtime_sizes_px": [
+    24,
+    32,
+    40,
+    48,
+    64
+  ],
+  "runtime_permissions": {
+    "tint": true,
+    "rotation_deg": [
+      -3,
+      3
+    ],
+    "scale_percent": [
+      96,
+      104
+    ],
+    "alpha": true,
+    "facet_topology_change": false,
+    "silhouette_change": false
+  },
+  "qa": {
+    "report": "qa/G02_QA_REPORT.json",
+    "scale_sheet": "qa/G02_RUNTIME_SCALE_QA.png",
+    "dense_mosaic_24": "qa/G02_DENSE_MOSAIC_24PX.png",
+    "dense_mosaic_32": "qa/G02_DENSE_MOSAIC_32PX.png",
+    "dense_mosaic_40": "qa/G02_DENSE_MOSAIC_40PX.png"
+  }
+}

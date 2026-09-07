@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "hex": "#E70C35",
+    "name": "Color 1"
+  },
+  {
+    "id": 2,
+    "hex": "#6A940F",
+    "name": "Color 2"
+  },
+  {
+    "id": 3,
+    "hex": "#F45763",
+    "name": "Color 3"
+  },
+  {
+    "id": 4,
+    "hex": "#F86D86",
+    "name": "Color 4"
+  },
+  {
+    "id": 5,
+    "hex": "#F68C49",
+    "name": "Color 5"
+  },
+  {
+    "id": 6,
+    "hex": "#FA8E9B",
+    "name": "Color 6"
+  },
+  {
+    "id": 7,
+    "hex": "#FAA72E",
+    "name": "Color 7"
+  },
+  {
+    "id": 8,
+    "hex": "#F8AEB3",
+    "name": "Color 8"
+  },
+  {
+    "id": 9,
+    "hex": "#FBCFC4",
+    "name": "Color 9"
+  }
+]

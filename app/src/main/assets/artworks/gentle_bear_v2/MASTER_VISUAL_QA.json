@@ -1,0 +1,12 @@
+{
+  "artworkId": "gentle_bear_v2",
+  "status": "PASS",
+  "checks": {
+    "MVQ-001_subject_readability_25pct": "PASS",
+    "MVQ-002_facial_readability": "PASS",
+    "MVQ-003_silhouette_integrity": "PASS",
+    "MVQ-004_no_voronoi_dominance": "PASS",
+    "MVQ-005_clean_background_separation": "PASS",
+    "MVQ-006_benchmark_quality_class": "PASS"
+  }
+}

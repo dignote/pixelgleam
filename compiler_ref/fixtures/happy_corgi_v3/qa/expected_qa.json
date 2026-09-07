@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "geometry": {
+    "coveragePercent": 100.0,
+    "uncoveredPixels": 0,
+    "overlapPixels": 0,
+    "backgroundLabeledPixels": 0,
+    "cellCount": 347,
+    "regionCount": 43
+  },
+  "checks": {
+    "cellConnectivity": true,
+    "adjacencySymmetry": true,
+    "regionConnectivity": true,
+    "settledTextureMasterExact": true,
+    "colorSourceNumberedMaster": true
+  },
+  "blockers": [],
+  "majors": []
+}

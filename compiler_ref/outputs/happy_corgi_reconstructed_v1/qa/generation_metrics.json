@@ -1,0 +1,17 @@
+{
+  "cellAreaMedian": 324.0,
+  "cellAreaMean": 325.26239067055394,
+  "cellAreaCv": 0.3979432226111212,
+  "cellAreaMin": 1,
+  "cellAreaMax": 779,
+  "tinyCellCount": 5,
+  "hugeCellCount": 0,
+  "compactnessMedian": 0.5722264265915803,
+  "compactnessP10": 0.3163286234585166,
+  "semanticBoundaryCrossingCells": 0,
+  "requestedCellTarget": 347,
+  "actualCellCount": 343,
+  "actualRegionCount": 43,
+  "coveragePercent": 100.0,
+  "backgroundLabeledPixels": 0
+}

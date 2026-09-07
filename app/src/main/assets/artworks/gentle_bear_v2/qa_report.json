@@ -1,0 +1,19 @@
+{
+  "artworkId": "gentle_bear_v2",
+  "status": "PASS",
+  "metrics": {
+    "cellCount": 352,
+    "regionCount": 26,
+    "gameplayColors": 9,
+    "canvasDimensions": "1254x1254",
+    "backgroundLabeledPixels": 0,
+    "subjectCoverage": 1.0,
+    "cellAreaMedian": 1511,
+    "cellAreaP10": 477,
+    "cellAreaP90": 3336,
+    "cellAreaMin": 149,
+    "cellAreaMax": 5487,
+    "semanticBoundaryCrossingCells": 0,
+    "anchorFailures": 0
+  }
+}

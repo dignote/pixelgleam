@@ -1,0 +1,18 @@
+{
+  "fixtureId": "happy_corgi_v3_golden",
+  "protected": true,
+  "artworkId": "happy_corgi_v3",
+  "artworkVersion": "3.9",
+  "expected": {
+    "cellCount": 347,
+    "regionCount": 43,
+    "coveragePercent": 100.0,
+    "uncoveredPixels": 0,
+    "backgroundLabeledPixels": 0,
+    "cellConnectivity": true,
+    "adjacencySymmetry": true,
+    "regionConnectivity": true,
+    "settledTextureMasterExact": true
+  },
+  "note": "Do not regenerate during M0/M1. Exact-master means bit-exact on subject_mask pixels; settled_texture intentionally has transparent alpha outside subject_mask."
+}

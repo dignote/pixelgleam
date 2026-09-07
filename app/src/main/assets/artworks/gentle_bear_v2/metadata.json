@@ -1,0 +1,11 @@
+{
+  "id": "gentle_bear_v2",
+  "name": "Gentle Bear",
+  "category": "Animals & Companions",
+  "totalRegions": 26,
+  "totalCells": 372,
+  "version": "2.0",
+  "canvasWidth": 1254,
+  "canvasHeight": 1254,
+  "gemMaterial": "soft_faceted_resin"
+}

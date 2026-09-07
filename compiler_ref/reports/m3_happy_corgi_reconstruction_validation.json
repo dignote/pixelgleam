@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "geometry": {
+    "width": 365,
+    "height": 455,
+    "subjectPixels": 111565,
+    "coveragePercent": 100.0,
+    "uncoveredPixels": 0,
+    "backgroundLabeledPixels": 0,
+    "cellCount": 343,
+    "regionCount": 43,
+    "overlapPixels": 0
+  },
+  "checks": {
+    "cellIdSetMatchesArtworkJson": true,
+    "cellIdsConsecutive": true,
+    "cellConnectivity": true,
+    "adjacencySymmetry": true,
+    "adjacencyExactRasterVsJson": true,
+    "regionColorConsistency": true,
+    "regionConnectivity": true,
+    "regionsAreMaximalSameColorComponents": true,
+    "settledTextureMasterExact": true,
+    "settledBackgroundTransparent": true,
+    "expectedGoldenMetricsMatch": true
+  },
+  "blockers": [],
+  "majors": [],
+  "fixture": {
+    "artworkId": "happy_corgi_reconstructed_v1",
+    "version": "compiler-v1.0",
+    "topologyType": "cell-id-raster-v1"
+  }
+}

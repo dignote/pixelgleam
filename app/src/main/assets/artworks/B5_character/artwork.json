@@ -1,0 +1,9778 @@
+{
+  "id": "B5_character",
+  "title": "B5_character",
+  "version": "compiler-v1.0",
+  "category": "benchmark",
+  "canvas": {
+    "width": 1254,
+    "height": 1254
+  },
+  "topologyType": "cell-id-raster-v1",
+  "hitTest": "cell-id-texture-lookup",
+  "settledRender": "authored-texture-reveal",
+  "flightRepresentation": "GEM_G02",
+  "palette": [
+    {
+      "id": 1,
+      "hex": "#583626",
+      "name": "Color 1"
+    },
+    {
+      "id": 2,
+      "hex": "#7B4D35",
+      "name": "Color 2"
+    },
+    {
+      "id": 3,
+      "hex": "#A778C8",
+      "name": "Color 3"
+    },
+    {
+      "id": 4,
+      "hex": "#F28398",
+      "name": "Color 4"
+    },
+    {
+      "id": 5,
+      "hex": "#C397DF",
+      "name": "Color 5"
+    },
+    {
+      "id": 6,
+      "hex": "#EF9D6D",
+      "name": "Color 6"
+    },
+    {
+      "id": 7,
+      "hex": "#F4A426",
+      "name": "Color 7"
+    },
+    {
+      "id": 8,
+      "hex": "#FBC99C",
+      "name": "Color 8"
+    },
+    {
+      "id": 9,
+      "hex": "#FED75E",
+      "name": "Color 9"
+    },
+    {
+      "id": 10,
+      "hex": "#F8E8D8",
+      "name": "Color 10"
+    }
+  ],
+  "cells": [
+    {
+      "id": 1,
+      "center": [
+        649.5,
+        136.5
+      ],
+      "colorId": 1,
+      "regionId": 0,
+      "polygon": [],
+      "neighbors": [
+        2,
+        5,
+        36,
+        42,
+        47
+      ],
+      "safeAnchor": {
+        "x": 650.5,
+        "y": 133.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 2,
+      "center": [
+        674.5,
+        115.5
+      ],
+      "colorId": 1,
+      "regionId": 0,
+      "polygon": [],
+      "neighbors": [
+        1,
+        3,
+        5
+      ],
+      "safeAnchor": {
+        "x": 674.5,
+        "y": 115.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 3,
+      "center": [
+        714.5,
+        130.5
+      ],
+      "colorId": 1,
+      "regionId": 0,
+      "polygon": [],
+      "neighbors": [
+        2,
+        4,
+        5,
+        6
+      ],
+      "safeAnchor": {
+        "x": 712.5,
+        "y": 131.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 4,
+      "center": [
+        746.5,
+        137.5
+      ],
+      "colorId": 1,
+      "regionId": 0,
+      "polygon": [],
+      "neighbors": [
+        3,
+        6,
+        43,
+        51
+      ],
+      "safeAnchor": {
+        "x": 746.5,
+        "y": 138.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 5,
+      "center": [
+        687.5,
+        143.5
+      ],
+      "colorId": 1,
+      "regionId": 0,
+      "polygon": [],
+      "neighbors": [
+        1,
+        2,
+        3,
+        6,
+        47,
+        48
+      ],
+      "safeAnchor": {
+        "x": 688.5,
+        "y": 144.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 6,
+      "center": [
+        724.5,
+        159.5
+      ],
+      "colorId": 1,
+      "regionId": 0,
+      "polygon": [],
+      "neighbors": [
+        3,
+        4,
+        5,
+        48,
+        51,
+        55
+      ],
+      "safeAnchor": {
+        "x": 729.5,
+        "y": 157.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 7,
+      "center": [
+        806.5,
+        346.5
+      ],
+      "colorId": 1,
+      "regionId": 1,
+      "polygon": [],
+      "neighbors": [
+        8,
+        9,
+        95,
+        99,
+        107,
+        310,
+        316
+      ],
+      "safeAnchor": {
+        "x": 810.5,
+        "y": 344.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 8,
+      "center": [
+        830.5,
+        364.5
+      ],
+      "colorId": 1,
+      "regionId": 1,
+      "polygon": [],
+      "neighbors": [
+        7,
+        9,
+        10,
+        107,
+        114,
+        266
+      ],
+      "safeAnchor": {
+        "x": 829.5,
+        "y": 364.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 9,
+      "center": [
+        800.5,
+        370.5
+      ],
+      "colorId": 1,
+      "regionId": 1,
+      "polygon": [],
+      "neighbors": [
+        7,
+        8,
+        129,
+        266,
+        267,
+        316
+      ],
+      "safeAnchor": {
+        "x": 801.5,
+        "y": 371.5,
+        "clearance": 10.0
+      }
+    },
+    {
+      "id": 10,
+      "center": [
+        848.5,
+        427.5
+      ],
+      "colorId": 1,
+      "regionId": 1,
+      "polygon": [],
+      "neighbors": [
+        8,
+        11,
+        114,
+        117,
+        120,
+        266,
+        267
+      ],
+      "safeAnchor": {
+        "x": 848.5,
+        "y": 427.5,
+        "clearance": 12.0
+      }
+    },
+    {
+      "id": 11,
+      "center": [
+        840.5,
+        457.5
+      ],
+      "colorId": 1,
+      "regionId": 1,
+      "polygon": [],
+      "neighbors": [
+        10,
+        12,
+        13,
+        14,
+        120,
+        267,
+        268
+      ],
+      "safeAnchor": {
+        "x": 838.5,
+        "y": 457.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 12,
+      "center": [
+        802.5,
+        479.5
+      ],
+      "colorId": 1,
+      "regionId": 1,
+      "polygon": [],
+      "neighbors": [
+        11,
+        14,
+        15,
+        16,
+        268,
+        326,
+        336
+      ],
+      "safeAnchor": {
+        "x": 802.5,
+        "y": 480.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 13,
+      "center": [
+        872.5,
+        499.5
+      ],
+      "colorId": 1,
+      "regionId": 1,
+      "polygon": [],
+      "neighbors": [
+        11,
+        14,
+        17,
+        120
+      ],
+      "safeAnchor": {
+        "x": 872.5,
+        "y": 500.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 14,
+      "center": [
+        833.5,
+        492.5
+      ],
+      "colorId": 1,
+      "regionId": 1,
+      "polygon": [],
+      "neighbors": [
+        11,
+        12,
+        13,
+        16,
+        17
+      ],
+      "safeAnchor": {
+        "x": 833.5,
+        "y": 493.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 15,
+      "center": [
+        781.5,
+        507.5
+      ],
+      "colorId": 1,
+      "regionId": 1,
+      "polygon": [],
+      "neighbors": [
+        12,
+        16,
+        18,
+        19,
+        336
+      ],
+      "safeAnchor": {
+        "x": 782.5,
+        "y": 503.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 16,
+      "center": [
+        810.5,
+        520.5
+      ],
+      "colorId": 1,
+      "regionId": 1,
+      "polygon": [],
+      "neighbors": [
+        12,
+        14,
+        15,
+        17,
+        19
+      ],
+      "safeAnchor": {
+        "x": 811.5,
+        "y": 518.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 17,
+      "center": [
+        846.5,
+        519.5
+      ],
+      "colorId": 1,
+      "regionId": 1,
+      "polygon": [],
+      "neighbors": [
+        13,
+        14,
+        16
+      ],
+      "safeAnchor": {
+        "x": 851.5,
+        "y": 516.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 18,
+      "center": [
+        741.5,
+        538.5
+      ],
+      "colorId": 1,
+      "regionId": 1,
+      "polygon": [],
+      "neighbors": [
+        15,
+        19,
+        20,
+        336,
+        345
+      ],
+      "safeAnchor": {
+        "x": 739.5,
+        "y": 538.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 19,
+      "center": [
+        771.5,
+        536.5
+      ],
+      "colorId": 1,
+      "regionId": 1,
+      "polygon": [],
+      "neighbors": [
+        15,
+        16,
+        18
+      ],
+      "safeAnchor": {
+        "x": 771.5,
+        "y": 535.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 20,
+      "center": [
+        712.5,
+        545.5
+      ],
+      "colorId": 1,
+      "regionId": 1,
+      "polygon": [],
+      "neighbors": [
+        18,
+        275,
+        276,
+        345
+      ],
+      "safeAnchor": {
+        "x": 712.5,
+        "y": 544.5,
+        "clearance": 10.0
+      }
+    },
+    {
+      "id": 21,
+      "center": [
+        450.5,
+        383.5
+      ],
+      "colorId": 1,
+      "regionId": 2,
+      "polygon": [],
+      "neighbors": [
+        22,
+        109,
+        111,
+        113,
+        115,
+        118
+      ],
+      "safeAnchor": {
+        "x": 450.5,
+        "y": 380.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 22,
+      "center": [
+        434.5,
+        412.5
+      ],
+      "colorId": 1,
+      "regionId": 2,
+      "polygon": [],
+      "neighbors": [
+        21,
+        23,
+        115,
+        118,
+        269,
+        323
+      ],
+      "safeAnchor": {
+        "x": 435.5,
+        "y": 414.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 23,
+      "center": [
+        423.5,
+        457.5
+      ],
+      "colorId": 1,
+      "regionId": 2,
+      "polygon": [],
+      "neighbors": [
+        22,
+        24,
+        118,
+        121,
+        123,
+        269
+      ],
+      "safeAnchor": {
+        "x": 424.5,
+        "y": 455.5,
+        "clearance": 10.0
+      }
+    },
+    {
+      "id": 24,
+      "center": [
+        435.5,
+        492.5
+      ],
+      "colorId": 1,
+      "regionId": 2,
+      "polygon": [],
+      "neighbors": [
+        23,
+        25,
+        27,
+        123,
+        269,
+        270,
+        271
+      ],
+      "safeAnchor": {
+        "x": 436.5,
+        "y": 490.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 25,
+      "center": [
+        461.5,
+        515.5
+      ],
+      "colorId": 1,
+      "regionId": 2,
+      "polygon": [],
+      "neighbors": [
+        24,
+        26,
+        27,
+        29,
+        30,
+        271
+      ],
+      "safeAnchor": {
+        "x": 459.5,
+        "y": 514.5,
+        "clearance": 20.0
+      }
+    },
+    {
+      "id": 26,
+      "center": [
+        495.5,
+        522.5
+      ],
+      "colorId": 1,
+      "regionId": 2,
+      "polygon": [],
+      "neighbors": [
+        25,
+        28,
+        30,
+        271
+      ],
+      "safeAnchor": {
+        "x": 498.5,
+        "y": 522.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 27,
+      "center": [
+        420.5,
+        533.5
+      ],
+      "colorId": 1,
+      "regionId": 2,
+      "polygon": [],
+      "neighbors": [
+        24,
+        25,
+        29,
+        123,
+        124,
+        362,
+        363
+      ],
+      "safeAnchor": {
+        "x": 418.5,
+        "y": 534.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 28,
+      "center": [
+        524.5,
+        546.5
+      ],
+      "colorId": 1,
+      "regionId": 2,
+      "polygon": [],
+      "neighbors": [
+        26,
+        30,
+        31,
+        132,
+        271,
+        338,
+        341,
+        365
+      ],
+      "safeAnchor": {
+        "x": 522.5,
+        "y": 545.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 29,
+      "center": [
+        448.5,
+        547.5
+      ],
+      "colorId": 1,
+      "regionId": 2,
+      "polygon": [],
+      "neighbors": [
+        25,
+        27,
+        30,
+        363,
+        367
+      ],
+      "safeAnchor": {
+        "x": 448.5,
+        "y": 545.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 30,
+      "center": [
+        482.5,
+        547.5
+      ],
+      "colorId": 1,
+      "regionId": 2,
+      "polygon": [],
+      "neighbors": [
+        25,
+        26,
+        28,
+        29,
+        365,
+        367
+      ],
+      "safeAnchor": {
+        "x": 482.5,
+        "y": 548.5,
+        "clearance": 13.0
+      }
+    },
+    {
+      "id": 31,
+      "center": [
+        559.5,
+        553.5
+      ],
+      "colorId": 1,
+      "regionId": 2,
+      "polygon": [],
+      "neighbors": [
+        28,
+        132,
+        274,
+        277,
+        341
+      ],
+      "safeAnchor": {
+        "x": 559.5,
+        "y": 553.5,
+        "clearance": 11.0
+      }
+    },
+    {
+      "id": 32,
+      "center": [
+        530.5,
+        396.5
+      ],
+      "colorId": 1,
+      "regionId": 3,
+      "polygon": [],
+      "neighbors": [
+        33,
+        34,
+        35,
+        315,
+        320,
+        323
+      ],
+      "safeAnchor": {
+        "x": 529.5,
+        "y": 396.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 33,
+      "center": [
+        561.5,
+        412.5
+      ],
+      "colorId": 1,
+      "regionId": 3,
+      "polygon": [],
+      "neighbors": [
+        32,
+        35,
+        315,
+        319,
+        322,
+        328
+      ],
+      "safeAnchor": {
+        "x": 560.5,
+        "y": 417.5,
+        "clearance": 20.0
+      }
+    },
+    {
+      "id": 34,
+      "center": [
+        514.5,
+        442.5
+      ],
+      "colorId": 1,
+      "regionId": 3,
+      "polygon": [],
+      "neighbors": [
+        32,
+        35,
+        323,
+        330,
+        334
+      ],
+      "safeAnchor": {
+        "x": 513.5,
+        "y": 441.5,
+        "clearance": 11.0
+      }
+    },
+    {
+      "id": 35,
+      "center": [
+        552.5,
+        456.5
+      ],
+      "colorId": 1,
+      "regionId": 3,
+      "polygon": [],
+      "neighbors": [
+        32,
+        33,
+        34,
+        328,
+        331,
+        334
+      ],
+      "safeAnchor": {
+        "x": 540.5,
+        "y": 450.5,
+        "clearance": 11.0
+      }
+    },
+    {
+      "id": 36,
+      "center": [
+        616.5,
+        110.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        1,
+        37,
+        39,
+        42
+      ],
+      "safeAnchor": {
+        "x": 613.5,
+        "y": 111.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 37,
+      "center": [
+        575.5,
+        114.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        36,
+        38,
+        39,
+        40
+      ],
+      "safeAnchor": {
+        "x": 576.5,
+        "y": 114.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 38,
+      "center": [
+        534.5,
+        128.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        37,
+        40,
+        41,
+        44
+      ],
+      "safeAnchor": {
+        "x": 535.5,
+        "y": 127.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 39,
+      "center": [
+        595.5,
+        137.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        36,
+        37,
+        40,
+        42,
+        46
+      ],
+      "safeAnchor": {
+        "x": 596.5,
+        "y": 134.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 40,
+      "center": [
+        562.5,
+        142.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        37,
+        38,
+        39,
+        44,
+        46,
+        49
+      ],
+      "safeAnchor": {
+        "x": 561.5,
+        "y": 141.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 41,
+      "center": [
+        503.5,
+        145.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        38,
+        44,
+        45,
+        50
+      ],
+      "safeAnchor": {
+        "x": 501.5,
+        "y": 144.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 42,
+      "center": [
+        619.5,
+        154.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        1,
+        36,
+        39,
+        46,
+        47,
+        53
+      ],
+      "safeAnchor": {
+        "x": 620.5,
+        "y": 153.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 43,
+      "center": [
+        779.5,
+        160.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        4,
+        51,
+        52,
+        57
+      ],
+      "safeAnchor": {
+        "x": 780.5,
+        "y": 160.5,
+        "clearance": 20.0
+      }
+    },
+    {
+      "id": 44,
+      "center": [
+        532.5,
+        159.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        38,
+        40,
+        41,
+        49,
+        50,
+        56
+      ],
+      "safeAnchor": {
+        "x": 533.5,
+        "y": 159.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 45,
+      "center": [
+        474.5,
+        170.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        41,
+        50,
+        54,
+        58,
+        63
+      ],
+      "safeAnchor": {
+        "x": 471.5,
+        "y": 166.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 46,
+      "center": [
+        594.5,
+        171.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        39,
+        40,
+        42,
+        49,
+        53,
+        59
+      ],
+      "safeAnchor": {
+        "x": 595.5,
+        "y": 171.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 47,
+      "center": [
+        658.5,
+        173.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        1,
+        5,
+        42,
+        48,
+        53,
+        61
+      ],
+      "safeAnchor": {
+        "x": 658.5,
+        "y": 172.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 48,
+      "center": [
+        688.5,
+        183.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        5,
+        6,
+        47,
+        55,
+        61,
+        65
+      ],
+      "safeAnchor": {
+        "x": 690.5,
+        "y": 181.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 49,
+      "center": [
+        561.5,
+        175.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        40,
+        44,
+        46,
+        56,
+        59,
+        60
+      ],
+      "safeAnchor": {
+        "x": 559.5,
+        "y": 173.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 50,
+      "center": [
+        505.5,
+        174.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        41,
+        44,
+        45,
+        56,
+        58
+      ],
+      "safeAnchor": {
+        "x": 505.5,
+        "y": 175.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 51,
+      "center": [
+        755.5,
+        183.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        4,
+        6,
+        43,
+        55,
+        57,
+        67
+      ],
+      "safeAnchor": {
+        "x": 756.5,
+        "y": 181.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 52,
+      "center": [
+        808.5,
+        187.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        43,
+        57,
+        62
+      ],
+      "safeAnchor": {
+        "x": 803.5,
+        "y": 180.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 53,
+      "center": [
+        628.5,
+        185.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        42,
+        46,
+        47,
+        59,
+        61,
+        66
+      ],
+      "safeAnchor": {
+        "x": 626.5,
+        "y": 185.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 54,
+      "center": [
+        446.5,
+        193.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        45,
+        63,
+        64
+      ],
+      "safeAnchor": {
+        "x": 446.5,
+        "y": 194.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 55,
+      "center": [
+        722.5,
+        194.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        6,
+        48,
+        51,
+        65,
+        67,
+        69
+      ],
+      "safeAnchor": {
+        "x": 722.5,
+        "y": 192.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 56,
+      "center": [
+        530.5,
+        190.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        44,
+        49,
+        50,
+        58,
+        60,
+        68
+      ],
+      "safeAnchor": {
+        "x": 528.5,
+        "y": 190.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 57,
+      "center": [
+        783.5,
+        207.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        43,
+        51,
+        52,
+        62,
+        67,
+        71,
+        77
+      ],
+      "safeAnchor": {
+        "x": 784.5,
+        "y": 205.5,
+        "clearance": 20.0
+      }
+    },
+    {
+      "id": 58,
+      "center": [
+        496.5,
+        203.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        45,
+        50,
+        56,
+        63,
+        68,
+        70
+      ],
+      "safeAnchor": {
+        "x": 494.5,
+        "y": 203.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 59,
+      "center": [
+        593.5,
+        204.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        46,
+        49,
+        53,
+        60,
+        66,
+        72,
+        75
+      ],
+      "safeAnchor": {
+        "x": 593.5,
+        "y": 204.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 60,
+      "center": [
+        561.5,
+        203.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        49,
+        56,
+        59,
+        68,
+        72
+      ],
+      "safeAnchor": {
+        "x": 559.5,
+        "y": 204.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 61,
+      "center": [
+        658.5,
+        207.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        47,
+        48,
+        53,
+        65,
+        66,
+        73,
+        74
+      ],
+      "safeAnchor": {
+        "x": 657.5,
+        "y": 207.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 62,
+      "center": [
+        825.5,
+        215.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        52,
+        57,
+        71,
+        79
+      ],
+      "safeAnchor": {
+        "x": 824.5,
+        "y": 216.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 63,
+      "center": [
+        466.5,
+        216.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        45,
+        54,
+        58,
+        64,
+        70,
+        76,
+        81
+      ],
+      "safeAnchor": {
+        "x": 466.5,
+        "y": 214.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 64,
+      "center": [
+        432.5,
+        227.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        54,
+        63,
+        76,
+        78
+      ],
+      "safeAnchor": {
+        "x": 434.5,
+        "y": 228.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 65,
+      "center": [
+        692.5,
+        213.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        48,
+        55,
+        61,
+        69,
+        73,
+        264
+      ],
+      "safeAnchor": {
+        "x": 692.5,
+        "y": 214.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 66,
+      "center": [
+        622.5,
+        216.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        53,
+        59,
+        61,
+        74,
+        75
+      ],
+      "safeAnchor": {
+        "x": 622.5,
+        "y": 217.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 67,
+      "center": [
+        753.5,
+        222.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        51,
+        55,
+        57,
+        69,
+        77,
+        82
+      ],
+      "safeAnchor": {
+        "x": 752.5,
+        "y": 220.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 68,
+      "center": [
+        533.5,
+        221.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        56,
+        58,
+        60,
+        70,
+        72,
+        80
+      ],
+      "safeAnchor": {
+        "x": 531.5,
+        "y": 221.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 69,
+      "center": [
+        722.5,
+        232.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        55,
+        65,
+        67,
+        82,
+        264
+      ],
+      "safeAnchor": {
+        "x": 723.5,
+        "y": 236.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 70,
+      "center": [
+        503.5,
+        232.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        58,
+        63,
+        68,
+        80,
+        81
+      ],
+      "safeAnchor": {
+        "x": 504.5,
+        "y": 232.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 71,
+      "center": [
+        805.5,
+        241.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        57,
+        62,
+        77,
+        79,
+        87
+      ],
+      "safeAnchor": {
+        "x": 805.5,
+        "y": 238.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 72,
+      "center": [
+        561.5,
+        235.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        59,
+        60,
+        68,
+        75,
+        80,
+        83
+      ],
+      "safeAnchor": {
+        "x": 564.5,
+        "y": 234.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 73,
+      "center": [
+        674.5,
+        238.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        61,
+        65,
+        74,
+        84,
+        86,
+        264
+      ],
+      "safeAnchor": {
+        "x": 673.5,
+        "y": 236.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 74,
+      "center": [
+        642.5,
+        237.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        61,
+        66,
+        73,
+        75,
+        84,
+        85
+      ],
+      "safeAnchor": {
+        "x": 641.5,
+        "y": 236.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 75,
+      "center": [
+        599.5,
+        242.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        59,
+        66,
+        72,
+        74,
+        83,
+        85,
+        89
+      ],
+      "safeAnchor": {
+        "x": 601.5,
+        "y": 242.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 76,
+      "center": [
+        458.5,
+        250.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        63,
+        64,
+        78,
+        81,
+        88,
+        92
+      ],
+      "safeAnchor": {
+        "x": 457.5,
+        "y": 250.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 77,
+      "center": [
+        773.5,
+        253.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        57,
+        67,
+        71,
+        82,
+        87,
+        94
+      ],
+      "safeAnchor": {
+        "x": 772.5,
+        "y": 250.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 78,
+      "center": [
+        417.5,
+        255.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        64,
+        76,
+        88,
+        91
+      ],
+      "safeAnchor": {
+        "x": 418.5,
+        "y": 253.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 79,
+      "center": [
+        840.5,
+        257.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        62,
+        71,
+        87,
+        95
+      ],
+      "safeAnchor": {
+        "x": 840.5,
+        "y": 257.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 80,
+      "center": [
+        530.5,
+        255.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        68,
+        70,
+        72,
+        81,
+        83,
+        90,
+        93
+      ],
+      "safeAnchor": {
+        "x": 532.5,
+        "y": 255.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 81,
+      "center": [
+        493.5,
+        260.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        63,
+        70,
+        76,
+        80,
+        92,
+        93
+      ],
+      "safeAnchor": {
+        "x": 490.5,
+        "y": 258.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 82,
+      "center": [
+        740.5,
+        261.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        67,
+        69,
+        77,
+        94,
+        264
+      ],
+      "safeAnchor": {
+        "x": 740.5,
+        "y": 262.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 83,
+      "center": [
+        571.5,
+        263.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        72,
+        75,
+        80,
+        89,
+        90,
+        96
+      ],
+      "safeAnchor": {
+        "x": 571.5,
+        "y": 263.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 84,
+      "center": [
+        648.5,
+        263.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        73,
+        74,
+        85,
+        86,
+        97
+      ],
+      "safeAnchor": {
+        "x": 648.5,
+        "y": 263.5,
+        "clearance": 13.0
+      }
+    },
+    {
+      "id": 85,
+      "center": [
+        624.5,
+        276.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        74,
+        75,
+        84,
+        89,
+        97,
+        98
+      ],
+      "safeAnchor": {
+        "x": 623.5,
+        "y": 270.5,
+        "clearance": 13.0
+      }
+    },
+    {
+      "id": 86,
+      "center": [
+        672.5,
+        267.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        73,
+        84,
+        97,
+        264,
+        265
+      ],
+      "safeAnchor": {
+        "x": 671.5,
+        "y": 267.5,
+        "clearance": 11.0
+      }
+    },
+    {
+      "id": 87,
+      "center": [
+        809.5,
+        276.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        71,
+        77,
+        79,
+        94,
+        95,
+        99
+      ],
+      "safeAnchor": {
+        "x": 806.5,
+        "y": 276.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 88,
+      "center": [
+        441.5,
+        279.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        76,
+        78,
+        91,
+        92,
+        100
+      ],
+      "safeAnchor": {
+        "x": 439.5,
+        "y": 277.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 89,
+      "center": [
+        596.5,
+        277.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        75,
+        83,
+        85,
+        96,
+        98
+      ],
+      "safeAnchor": {
+        "x": 595.5,
+        "y": 277.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 90,
+      "center": [
+        548.5,
+        284.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        80,
+        83,
+        93,
+        96,
+        102
+      ],
+      "safeAnchor": {
+        "x": 549.5,
+        "y": 282.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 91,
+      "center": [
+        408.5,
+        291.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        78,
+        88,
+        100,
+        105
+      ],
+      "safeAnchor": {
+        "x": 409.5,
+        "y": 290.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 92,
+      "center": [
+        477.5,
+        288.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        76,
+        81,
+        88,
+        93,
+        100,
+        101,
+        103
+      ],
+      "safeAnchor": {
+        "x": 477.5,
+        "y": 286.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 93,
+      "center": [
+        514.5,
+        288.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        80,
+        81,
+        90,
+        92,
+        101,
+        102
+      ],
+      "safeAnchor": {
+        "x": 514.5,
+        "y": 285.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 94,
+      "center": [
+        768.5,
+        293.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        77,
+        82,
+        87,
+        99,
+        264,
+        310
+      ],
+      "safeAnchor": {
+        "x": 767.5,
+        "y": 295.5,
+        "clearance": 22.0
+      }
+    },
+    {
+      "id": 95,
+      "center": [
+        848.5,
+        303.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        7,
+        79,
+        87,
+        99,
+        107
+      ],
+      "safeAnchor": {
+        "x": 848.5,
+        "y": 303.5,
+        "clearance": 22.0
+      }
+    },
+    {
+      "id": 96,
+      "center": [
+        576.5,
+        299.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        83,
+        89,
+        90,
+        98,
+        102
+      ],
+      "safeAnchor": {
+        "x": 578.5,
+        "y": 297.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 97,
+      "center": [
+        646.5,
+        295.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        84,
+        85,
+        86,
+        98,
+        265
+      ],
+      "safeAnchor": {
+        "x": 647.5,
+        "y": 297.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 98,
+      "center": [
+        617.5,
+        306.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        85,
+        89,
+        96,
+        97,
+        102,
+        104,
+        106,
+        265,
+        313
+      ],
+      "safeAnchor": {
+        "x": 617.5,
+        "y": 306.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 99,
+      "center": [
+        801.5,
+        310.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        7,
+        87,
+        94,
+        95,
+        310
+      ],
+      "safeAnchor": {
+        "x": 799.5,
+        "y": 312.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 100,
+      "center": [
+        438.5,
+        312.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        88,
+        91,
+        92,
+        103,
+        105,
+        109
+      ],
+      "safeAnchor": {
+        "x": 438.5,
+        "y": 313.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 101,
+      "center": [
+        499.5,
+        321.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        92,
+        93,
+        102,
+        103,
+        108,
+        111
+      ],
+      "safeAnchor": {
+        "x": 506.5,
+        "y": 320.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 102,
+      "center": [
+        550.5,
+        317.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        90,
+        93,
+        96,
+        98,
+        101,
+        104,
+        108,
+        112
+      ],
+      "safeAnchor": {
+        "x": 552.5,
+        "y": 321.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 103,
+      "center": [
+        474.5,
+        322.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        92,
+        100,
+        101,
+        109,
+        111
+      ],
+      "safeAnchor": {
+        "x": 472.5,
+        "y": 324.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 104,
+      "center": [
+        568.5,
+        337.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        98,
+        102,
+        106,
+        112,
+        313,
+        315
+      ],
+      "safeAnchor": {
+        "x": 574.5,
+        "y": 332.5,
+        "clearance": 4.0
+      }
+    },
+    {
+      "id": 105,
+      "center": [
+        406.5,
+        324.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        91,
+        100,
+        109,
+        110,
+        113
+      ],
+      "safeAnchor": {
+        "x": 405.5,
+        "y": 325.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 106,
+      "center": [
+        600.5,
+        325.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        98,
+        104,
+        313
+      ],
+      "safeAnchor": {
+        "x": 600.5,
+        "y": 324.5,
+        "clearance": 10.0
+      }
+    },
+    {
+      "id": 107,
+      "center": [
+        861.5,
+        344.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        7,
+        8,
+        95,
+        114
+      ],
+      "safeAnchor": {
+        "x": 866.5,
+        "y": 342.5,
+        "clearance": 22.0
+      }
+    },
+    {
+      "id": 108,
+      "center": [
+        526.5,
+        338.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        101,
+        102,
+        111,
+        112
+      ],
+      "safeAnchor": {
+        "x": 525.5,
+        "y": 337.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 109,
+      "center": [
+        441.5,
+        346.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        21,
+        100,
+        103,
+        105,
+        111,
+        113
+      ],
+      "safeAnchor": {
+        "x": 441.5,
+        "y": 347.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 110,
+      "center": [
+        395.5,
+        354.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        105,
+        113,
+        116
+      ],
+      "safeAnchor": {
+        "x": 396.5,
+        "y": 354.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 111,
+      "center": [
+        482.5,
+        357.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        21,
+        101,
+        103,
+        108,
+        109,
+        112,
+        115
+      ],
+      "safeAnchor": {
+        "x": 488.5,
+        "y": 355.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 112,
+      "center": [
+        530.5,
+        357.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        102,
+        104,
+        108,
+        111,
+        115,
+        315,
+        320
+      ],
+      "safeAnchor": {
+        "x": 532.5,
+        "y": 356.5,
+        "clearance": 6.0
+      }
+    },
+    {
+      "id": 113,
+      "center": [
+        414.5,
+        377.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        21,
+        105,
+        109,
+        110,
+        116,
+        118
+      ],
+      "safeAnchor": {
+        "x": 414.5,
+        "y": 375.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 114,
+      "center": [
+        881.5,
+        382.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        8,
+        10,
+        107,
+        117
+      ],
+      "safeAnchor": {
+        "x": 888.5,
+        "y": 379.5,
+        "clearance": 23.0
+      }
+    },
+    {
+      "id": 115,
+      "center": [
+        479.5,
+        386.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        21,
+        22,
+        111,
+        112,
+        320,
+        323
+      ],
+      "safeAnchor": {
+        "x": 485.5,
+        "y": 382.5,
+        "clearance": 6.0
+      }
+    },
+    {
+      "id": 116,
+      "center": [
+        386.5,
+        389.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        110,
+        113,
+        118,
+        119
+      ],
+      "safeAnchor": {
+        "x": 387.5,
+        "y": 391.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 117,
+      "center": [
+        893.5,
+        422.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        10,
+        114,
+        120
+      ],
+      "safeAnchor": {
+        "x": 899.5,
+        "y": 419.5,
+        "clearance": 22.0
+      }
+    },
+    {
+      "id": 118,
+      "center": [
+        403.5,
+        417.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        21,
+        22,
+        23,
+        113,
+        116,
+        119,
+        121
+      ],
+      "safeAnchor": {
+        "x": 402.5,
+        "y": 414.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 119,
+      "center": [
+        371.5,
+        429.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        116,
+        118,
+        121,
+        122,
+        299
+      ],
+      "safeAnchor": {
+        "x": 373.5,
+        "y": 431.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 120,
+      "center": [
+        903.5,
+        464.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        10,
+        11,
+        13,
+        117
+      ],
+      "safeAnchor": {
+        "x": 882.5,
+        "y": 463.5,
+        "clearance": 21.0
+      }
+    },
+    {
+      "id": 121,
+      "center": [
+        396.5,
+        453.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        23,
+        118,
+        119,
+        122,
+        123
+      ],
+      "safeAnchor": {
+        "x": 394.5,
+        "y": 452.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 122,
+      "center": [
+        373.5,
+        478.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        119,
+        121,
+        123,
+        124,
+        299,
+        361
+      ],
+      "safeAnchor": {
+        "x": 373.5,
+        "y": 479.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 123,
+      "center": [
+        403.5,
+        491.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        23,
+        24,
+        27,
+        121,
+        122,
+        124
+      ],
+      "safeAnchor": {
+        "x": 402.5,
+        "y": 491.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 124,
+      "center": [
+        384.5,
+        512.5
+      ],
+      "colorId": 2,
+      "regionId": 4,
+      "polygon": [],
+      "neighbors": [
+        27,
+        122,
+        123,
+        361,
+        362
+      ],
+      "safeAnchor": {
+        "x": 386.5,
+        "y": 512.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 125,
+      "center": [
+        712.5,
+        374.5
+      ],
+      "colorId": 2,
+      "regionId": 5,
+      "polygon": [],
+      "neighbors": [
+        126,
+        127,
+        128,
+        130,
+        131,
+        312,
+        314,
+        317,
+        321,
+        324,
+        329
+      ],
+      "safeAnchor": {
+        "x": 711.5,
+        "y": 375.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 126,
+      "center": [
+        751.5,
+        370.5
+      ],
+      "colorId": 2,
+      "regionId": 5,
+      "polygon": [],
+      "neighbors": [
+        125,
+        127,
+        129,
+        314,
+        316
+      ],
+      "safeAnchor": {
+        "x": 751.5,
+        "y": 371.5,
+        "clearance": 8.0
+      }
+    },
+    {
+      "id": 127,
+      "center": [
+        755.5,
+        409.5
+      ],
+      "colorId": 2,
+      "regionId": 5,
+      "polygon": [],
+      "neighbors": [
+        125,
+        126,
+        128,
+        129,
+        131,
+        326,
+        327
+      ],
+      "safeAnchor": {
+        "x": 755.5,
+        "y": 407.5,
+        "clearance": 7.0
+      }
+    },
+    {
+      "id": 128,
+      "center": [
+        740.5,
+        405.5
+      ],
+      "colorId": 2,
+      "regionId": 5,
+      "polygon": [],
+      "neighbors": [
+        125,
+        127,
+        130,
+        131
+      ],
+      "safeAnchor": {
+        "x": 735.5,
+        "y": 393.5,
+        "clearance": 9.0
+      }
+    },
+    {
+      "id": 129,
+      "center": [
+        791.5,
+        400.5
+      ],
+      "colorId": 2,
+      "regionId": 5,
+      "polygon": [],
+      "neighbors": [
+        9,
+        126,
+        127,
+        267,
+        268,
+        316,
+        326
+      ],
+      "safeAnchor": {
+        "x": 774.5,
+        "y": 424.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 130,
+      "center": [
+        716.5,
+        411.5
+      ],
+      "colorId": 2,
+      "regionId": 5,
+      "polygon": [],
+      "neighbors": [
+        125,
+        128,
+        131
+      ],
+      "safeAnchor": {
+        "x": 715.5,
+        "y": 409.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 131,
+      "center": [
+        718.5,
+        437.5
+      ],
+      "colorId": 2,
+      "regionId": 5,
+      "polygon": [],
+      "neighbors": [
+        125,
+        127,
+        128,
+        130,
+        327,
+        329
+      ],
+      "safeAnchor": {
+        "x": 729.5,
+        "y": 431.5,
+        "clearance": 12.0
+      }
+    },
+    {
+      "id": 132,
+      "center": [
+        544.5,
+        579.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        28,
+        31,
+        135,
+        136,
+        277,
+        365
+      ],
+      "safeAnchor": {
+        "x": 542.5,
+        "y": 580.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 133,
+      "center": [
+        734.5,
+        592.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        134,
+        139,
+        140,
+        276,
+        378
+      ],
+      "safeAnchor": {
+        "x": 738.5,
+        "y": 577.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 134,
+      "center": [
+        766.5,
+        591.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        133,
+        137,
+        140
+      ],
+      "safeAnchor": {
+        "x": 768.5,
+        "y": 590.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 135,
+      "center": [
+        513.5,
+        603.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        132,
+        136,
+        141,
+        142,
+        365,
+        367,
+        374
+      ],
+      "safeAnchor": {
+        "x": 515.5,
+        "y": 602.5,
+        "clearance": 21.0
+      }
+    },
+    {
+      "id": 136,
+      "center": [
+        561.5,
+        612.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        132,
+        135,
+        142,
+        143,
+        147,
+        277,
+        380
+      ],
+      "safeAnchor": {
+        "x": 562.5,
+        "y": 614.5,
+        "clearance": 21.0
+      }
+    },
+    {
+      "id": 137,
+      "center": [
+        791.5,
+        613.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        134,
+        140,
+        145
+      ],
+      "safeAnchor": {
+        "x": 790.5,
+        "y": 610.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 138,
+      "center": [
+        634.5,
+        628.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        143,
+        144,
+        149,
+        277,
+        378,
+        379
+      ],
+      "safeAnchor": {
+        "x": 638.5,
+        "y": 620.5,
+        "clearance": 20.0
+      }
+    },
+    {
+      "id": 139,
+      "center": [
+        718.5,
+        621.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        133,
+        140,
+        144,
+        146,
+        150,
+        378
+      ],
+      "safeAnchor": {
+        "x": 716.5,
+        "y": 618.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 140,
+      "center": [
+        754.5,
+        626.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        133,
+        134,
+        137,
+        139,
+        145,
+        146,
+        151
+      ],
+      "safeAnchor": {
+        "x": 754.5,
+        "y": 625.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 141,
+      "center": [
+        500.5,
+        639.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        135,
+        142,
+        148,
+        278,
+        279,
+        280,
+        374
+      ],
+      "safeAnchor": {
+        "x": 500.5,
+        "y": 642.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 142,
+      "center": [
+        534.5,
+        634.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        135,
+        136,
+        141,
+        147,
+        148
+      ],
+      "safeAnchor": {
+        "x": 536.5,
+        "y": 632.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 143,
+      "center": [
+        596.5,
+        635.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        136,
+        138,
+        147,
+        149,
+        379,
+        380
+      ],
+      "safeAnchor": {
+        "x": 595.5,
+        "y": 637.5,
+        "clearance": 20.0
+      }
+    },
+    {
+      "id": 144,
+      "center": [
+        671.5,
+        636.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        138,
+        139,
+        149,
+        150,
+        153,
+        378
+      ],
+      "safeAnchor": {
+        "x": 670.5,
+        "y": 638.5,
+        "clearance": 20.0
+      }
+    },
+    {
+      "id": 145,
+      "center": [
+        789.5,
+        646.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        137,
+        140,
+        151,
+        284
+      ],
+      "safeAnchor": {
+        "x": 791.5,
+        "y": 650.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 146,
+      "center": [
+        718.5,
+        654.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        139,
+        140,
+        150,
+        151,
+        152,
+        155
+      ],
+      "safeAnchor": {
+        "x": 718.5,
+        "y": 654.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 147,
+      "center": [
+        572.5,
+        660.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        136,
+        142,
+        143,
+        148,
+        149,
+        154
+      ],
+      "safeAnchor": {
+        "x": 573.5,
+        "y": 658.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 148,
+      "center": [
+        535.5,
+        670.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        141,
+        142,
+        147,
+        154,
+        280
+      ],
+      "safeAnchor": {
+        "x": 529.5,
+        "y": 669.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 149,
+      "center": [
+        614.5,
+        669.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        138,
+        143,
+        144,
+        147,
+        153,
+        154,
+        186
+      ],
+      "safeAnchor": {
+        "x": 618.5,
+        "y": 664.5,
+        "clearance": 21.0
+      }
+    },
+    {
+      "id": 150,
+      "center": [
+        687.5,
+        667.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        139,
+        144,
+        146,
+        153,
+        155
+      ],
+      "safeAnchor": {
+        "x": 686.5,
+        "y": 667.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 151,
+      "center": [
+        764.5,
+        658.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        140,
+        145,
+        146,
+        152,
+        284
+      ],
+      "safeAnchor": {
+        "x": 765.5,
+        "y": 660.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 152,
+      "center": [
+        741.5,
+        674.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        146,
+        151,
+        155,
+        284,
+        285
+      ],
+      "safeAnchor": {
+        "x": 740.5,
+        "y": 672.5,
+        "clearance": 11.0
+      }
+    },
+    {
+      "id": 153,
+      "center": [
+        649.5,
+        685.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        144,
+        149,
+        150,
+        155,
+        186,
+        187,
+        188
+      ],
+      "safeAnchor": {
+        "x": 649.5,
+        "y": 682.5,
+        "clearance": 20.0
+      }
+    },
+    {
+      "id": 154,
+      "center": [
+        550.5,
+        712.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        147,
+        148,
+        149,
+        156,
+        158,
+        184,
+        186,
+        192,
+        194
+      ],
+      "safeAnchor": {
+        "x": 551.5,
+        "y": 704.5,
+        "clearance": 8.0
+      }
+    },
+    {
+      "id": 155,
+      "center": [
+        735.5,
+        717.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        146,
+        150,
+        152,
+        153,
+        157,
+        163,
+        185,
+        187,
+        191,
+        195
+      ],
+      "safeAnchor": {
+        "x": 735.5,
+        "y": 717.5,
+        "clearance": 7.0
+      }
+    },
+    {
+      "id": 156,
+      "center": [
+        524.5,
+        739.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        154,
+        158,
+        160,
+        162
+      ],
+      "safeAnchor": {
+        "x": 525.5,
+        "y": 739.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 157,
+      "center": [
+        744.5,
+        734.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        155,
+        159,
+        163
+      ],
+      "safeAnchor": {
+        "x": 744.5,
+        "y": 733.5,
+        "clearance": 13.0
+      }
+    },
+    {
+      "id": 158,
+      "center": [
+        545.5,
+        749.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        154,
+        156,
+        162,
+        164,
+        194
+      ],
+      "safeAnchor": {
+        "x": 544.5,
+        "y": 748.5,
+        "clearance": 10.0
+      }
+    },
+    {
+      "id": 159,
+      "center": [
+        767.5,
+        751.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        157,
+        161,
+        163,
+        165
+      ],
+      "safeAnchor": {
+        "x": 769.5,
+        "y": 750.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 160,
+      "center": [
+        501.5,
+        758.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        156,
+        162,
+        203,
+        206
+      ],
+      "safeAnchor": {
+        "x": 501.5,
+        "y": 756.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 161,
+      "center": [
+        787.5,
+        767.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        159,
+        165,
+        204
+      ],
+      "safeAnchor": {
+        "x": 789.5,
+        "y": 767.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 162,
+      "center": [
+        528.5,
+        769.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        156,
+        158,
+        160,
+        164,
+        206,
+        209
+      ],
+      "safeAnchor": {
+        "x": 527.5,
+        "y": 769.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 163,
+      "center": [
+        737.5,
+        771.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        155,
+        157,
+        159,
+        165,
+        195,
+        199,
+        208
+      ],
+      "safeAnchor": {
+        "x": 736.5,
+        "y": 771.5,
+        "clearance": 11.0
+      }
+    },
+    {
+      "id": 164,
+      "center": [
+        551.5,
+        775.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        158,
+        162,
+        194,
+        198,
+        209
+      ],
+      "safeAnchor": {
+        "x": 554.5,
+        "y": 778.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 165,
+      "center": [
+        763.5,
+        777.5
+      ],
+      "colorId": 3,
+      "regionId": 6,
+      "polygon": [],
+      "neighbors": [
+        159,
+        161,
+        163,
+        204,
+        208
+      ],
+      "safeAnchor": {
+        "x": 763.5,
+        "y": 779.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 166,
+      "center": [
+        432.5,
+        821.5
+      ],
+      "colorId": 3,
+      "regionId": 7,
+      "polygon": [],
+      "neighbors": [
+        167,
+        168,
+        205
+      ],
+      "safeAnchor": {
+        "x": 433.5,
+        "y": 820.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 167,
+      "center": [
+        443.5,
+        846.5
+      ],
+      "colorId": 3,
+      "regionId": 7,
+      "polygon": [],
+      "neighbors": [
+        166,
+        168,
+        205,
+        211,
+        220,
+        228
+      ],
+      "safeAnchor": {
+        "x": 449.5,
+        "y": 841.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 168,
+      "center": [
+        412.5,
+        857.5
+      ],
+      "colorId": 3,
+      "regionId": 7,
+      "polygon": [],
+      "neighbors": [
+        166,
+        167,
+        169,
+        170,
+        228,
+        237
+      ],
+      "safeAnchor": {
+        "x": 412.5,
+        "y": 858.5,
+        "clearance": 20.0
+      }
+    },
+    {
+      "id": 169,
+      "center": [
+        392.5,
+        885.5
+      ],
+      "colorId": 3,
+      "regionId": 7,
+      "polygon": [],
+      "neighbors": [
+        168,
+        170,
+        381
+      ],
+      "safeAnchor": {
+        "x": 393.5,
+        "y": 883.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 170,
+      "center": [
+        412.5,
+        904.5
+      ],
+      "colorId": 3,
+      "regionId": 7,
+      "polygon": [],
+      "neighbors": [
+        168,
+        169,
+        237,
+        246,
+        381,
+        384
+      ],
+      "safeAnchor": {
+        "x": 412.5,
+        "y": 902.5,
+        "clearance": 11.0
+      }
+    },
+    {
+      "id": 171,
+      "center": [
+        855.5,
+        854.5
+      ],
+      "colorId": 3,
+      "regionId": 8,
+      "polygon": [],
+      "neighbors": [
+        172,
+        173,
+        210,
+        222
+      ],
+      "safeAnchor": {
+        "x": 854.5,
+        "y": 854.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 172,
+      "center": [
+        836.5,
+        878.5
+      ],
+      "colorId": 3,
+      "regionId": 8,
+      "polygon": [],
+      "neighbors": [
+        171,
+        173,
+        174,
+        222,
+        239
+      ],
+      "safeAnchor": {
+        "x": 838.5,
+        "y": 879.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 173,
+      "center": [
+        873.5,
+        884.5
+      ],
+      "colorId": 3,
+      "regionId": 8,
+      "polygon": [],
+      "neighbors": [
+        171,
+        172,
+        174,
+        382
+      ],
+      "safeAnchor": {
+        "x": 873.5,
+        "y": 886.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 174,
+      "center": [
+        856.5,
+        906.5
+      ],
+      "colorId": 3,
+      "regionId": 8,
+      "polygon": [],
+      "neighbors": [
+        172,
+        173,
+        239,
+        382
+      ],
+      "safeAnchor": {
+        "x": 854.5,
+        "y": 903.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 175,
+      "center": [
+        704.5,
+        1114.5
+      ],
+      "colorId": 3,
+      "regionId": 9,
+      "polygon": [],
+      "neighbors": [
+        176,
+        261,
+        262,
+        394
+      ],
+      "safeAnchor": {
+        "x": 703.5,
+        "y": 1114.5,
+        "clearance": 8.0
+      }
+    },
+    {
+      "id": 176,
+      "center": [
+        697.5,
+        1158.5
+      ],
+      "colorId": 3,
+      "regionId": 9,
+      "polygon": [],
+      "neighbors": [
+        175,
+        177,
+        262
+      ],
+      "safeAnchor": {
+        "x": 697.5,
+        "y": 1156.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 177,
+      "center": [
+        731.5,
+        1161.5
+      ],
+      "colorId": 3,
+      "regionId": 9,
+      "polygon": [],
+      "neighbors": [
+        176,
+        262,
+        263
+      ],
+      "safeAnchor": {
+        "x": 733.5,
+        "y": 1162.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 178,
+      "center": [
+        552.5,
+        1134.5
+      ],
+      "colorId": 3,
+      "regionId": 10,
+      "polygon": [],
+      "neighbors": [
+        179,
+        180,
+        182,
+        397,
+        398
+      ],
+      "safeAnchor": {
+        "x": 554.5,
+        "y": 1139.5,
+        "clearance": 13.0
+      }
+    },
+    {
+      "id": 179,
+      "center": [
+        594.5,
+        1114.5
+      ],
+      "colorId": 3,
+      "regionId": 10,
+      "polygon": [],
+      "neighbors": [
+        178,
+        180,
+        181,
+        396,
+        398
+      ],
+      "safeAnchor": {
+        "x": 591.5,
+        "y": 1114.5,
+        "clearance": 7.0
+      }
+    },
+    {
+      "id": 180,
+      "center": [
+        595.5,
+        1135.5
+      ],
+      "colorId": 3,
+      "regionId": 10,
+      "polygon": [],
+      "neighbors": [
+        178,
+        179,
+        181,
+        182
+      ],
+      "safeAnchor": {
+        "x": 594.5,
+        "y": 1134.5,
+        "clearance": 12.0
+      }
+    },
+    {
+      "id": 181,
+      "center": [
+        621.5,
+        1156.5
+      ],
+      "colorId": 3,
+      "regionId": 10,
+      "polygon": [],
+      "neighbors": [
+        179,
+        180,
+        182,
+        183
+      ],
+      "safeAnchor": {
+        "x": 621.5,
+        "y": 1154.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 182,
+      "center": [
+        571.5,
+        1163.5
+      ],
+      "colorId": 3,
+      "regionId": 10,
+      "polygon": [],
+      "neighbors": [
+        178,
+        180,
+        181,
+        183
+      ],
+      "safeAnchor": {
+        "x": 572.5,
+        "y": 1164.5,
+        "clearance": 21.0
+      }
+    },
+    {
+      "id": 183,
+      "center": [
+        599.5,
+        1186.5
+      ],
+      "colorId": 3,
+      "regionId": 10,
+      "polygon": [],
+      "neighbors": [
+        181,
+        182
+      ],
+      "safeAnchor": {
+        "x": 599.5,
+        "y": 1179.5,
+        "clearance": 10.0
+      }
+    },
+    {
+      "id": 184,
+      "center": [
+        574.5,
+        706.5
+      ],
+      "colorId": 4,
+      "regionId": 11,
+      "polygon": [],
+      "neighbors": [
+        154,
+        186,
+        192
+      ],
+      "safeAnchor": {
+        "x": 575.5,
+        "y": 701.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 185,
+      "center": [
+        711.5,
+        697.5
+      ],
+      "colorId": 4,
+      "regionId": 11,
+      "polygon": [],
+      "neighbors": [
+        155,
+        187,
+        191
+      ],
+      "safeAnchor": {
+        "x": 711.5,
+        "y": 698.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 186,
+      "center": [
+        604.5,
+        705.5
+      ],
+      "colorId": 4,
+      "regionId": 11,
+      "polygon": [],
+      "neighbors": [
+        149,
+        153,
+        154,
+        184,
+        188,
+        189,
+        192
+      ],
+      "safeAnchor": {
+        "x": 604.5,
+        "y": 704.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 187,
+      "center": [
+        682.5,
+        709.5
+      ],
+      "colorId": 4,
+      "regionId": 11,
+      "polygon": [],
+      "neighbors": [
+        153,
+        155,
+        185,
+        188,
+        190,
+        191
+      ],
+      "safeAnchor": {
+        "x": 680.5,
+        "y": 708.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 188,
+      "center": [
+        644.5,
+        723.5
+      ],
+      "colorId": 4,
+      "regionId": 11,
+      "polygon": [],
+      "neighbors": [
+        153,
+        186,
+        187,
+        189,
+        190,
+        193
+      ],
+      "safeAnchor": {
+        "x": 648.5,
+        "y": 722.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 189,
+      "center": [
+        611.5,
+        734.5
+      ],
+      "colorId": 4,
+      "regionId": 11,
+      "polygon": [],
+      "neighbors": [
+        186,
+        188,
+        192,
+        193,
+        194
+      ],
+      "safeAnchor": {
+        "x": 611.5,
+        "y": 734.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 190,
+      "center": [
+        677.5,
+        740.5
+      ],
+      "colorId": 4,
+      "regionId": 11,
+      "polygon": [],
+      "neighbors": [
+        187,
+        188,
+        191,
+        193,
+        195
+      ],
+      "safeAnchor": {
+        "x": 676.5,
+        "y": 740.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 191,
+      "center": [
+        710.5,
+        739.5
+      ],
+      "colorId": 4,
+      "regionId": 11,
+      "polygon": [],
+      "neighbors": [
+        155,
+        185,
+        187,
+        190,
+        195
+      ],
+      "safeAnchor": {
+        "x": 710.5,
+        "y": 739.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 192,
+      "center": [
+        577.5,
+        742.5
+      ],
+      "colorId": 4,
+      "regionId": 11,
+      "polygon": [],
+      "neighbors": [
+        154,
+        184,
+        186,
+        189,
+        194
+      ],
+      "safeAnchor": {
+        "x": 577.5,
+        "y": 741.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 193,
+      "center": [
+        658.5,
+        756.5
+      ],
+      "colorId": 4,
+      "regionId": 11,
+      "polygon": [],
+      "neighbors": [
+        188,
+        189,
+        190,
+        194,
+        195,
+        196,
+        197,
+        202
+      ],
+      "safeAnchor": {
+        "x": 656.5,
+        "y": 753.5,
+        "clearance": 11.0
+      }
+    },
+    {
+      "id": 194,
+      "center": [
+        583.5,
+        770.5
+      ],
+      "colorId": 4,
+      "regionId": 11,
+      "polygon": [],
+      "neighbors": [
+        154,
+        158,
+        164,
+        189,
+        192,
+        193,
+        196,
+        198
+      ],
+      "safeAnchor": {
+        "x": 583.5,
+        "y": 771.5,
+        "clearance": 10.0
+      }
+    },
+    {
+      "id": 195,
+      "center": [
+        701.5,
+        771.5
+      ],
+      "colorId": 4,
+      "regionId": 11,
+      "polygon": [],
+      "neighbors": [
+        155,
+        163,
+        190,
+        191,
+        193,
+        197,
+        199
+      ],
+      "safeAnchor": {
+        "x": 702.5,
+        "y": 772.5,
+        "clearance": 10.0
+      }
+    },
+    {
+      "id": 196,
+      "center": [
+        610.5,
+        786.5
+      ],
+      "colorId": 4,
+      "regionId": 11,
+      "polygon": [],
+      "neighbors": [
+        193,
+        194,
+        198,
+        200,
+        202,
+        207
+      ],
+      "safeAnchor": {
+        "x": 608.5,
+        "y": 784.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 197,
+      "center": [
+        675.5,
+        788.5
+      ],
+      "colorId": 4,
+      "regionId": 11,
+      "polygon": [],
+      "neighbors": [
+        193,
+        195,
+        199,
+        201,
+        202,
+        207
+      ],
+      "safeAnchor": {
+        "x": 676.5,
+        "y": 786.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 198,
+      "center": [
+        571.5,
+        807.5
+      ],
+      "colorId": 4,
+      "regionId": 11,
+      "polygon": [],
+      "neighbors": [
+        164,
+        194,
+        196,
+        200,
+        209,
+        216
+      ],
+      "safeAnchor": {
+        "x": 574.5,
+        "y": 802.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 199,
+      "center": [
+        714.5,
+        809.5
+      ],
+      "colorId": 4,
+      "regionId": 11,
+      "polygon": [],
+      "neighbors": [
+        163,
+        195,
+        197,
+        201,
+        208,
+        215,
+        218
+      ],
+      "safeAnchor": {
+        "x": 711.5,
+        "y": 804.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 200,
+      "center": [
+        600.5,
+        821.5
+      ],
+      "colorId": 4,
+      "regionId": 11,
+      "polygon": [],
+      "neighbors": [
+        196,
+        198,
+        207,
+        213,
+        216,
+        221
+      ],
+      "safeAnchor": {
+        "x": 598.5,
+        "y": 823.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 201,
+      "center": [
+        684.5,
+        821.5
+      ],
+      "colorId": 4,
+      "regionId": 11,
+      "polygon": [],
+      "neighbors": [
+        197,
+        199,
+        207,
+        217,
+        218
+      ],
+      "safeAnchor": {
+        "x": 687.5,
+        "y": 824.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 202,
+      "center": [
+        642.5,
+        773.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        193,
+        196,
+        197,
+        207
+      ],
+      "safeAnchor": {
+        "x": 642.5,
+        "y": 772.5,
+        "clearance": 9.0
+      }
+    },
+    {
+      "id": 203,
+      "center": [
+        479.5,
+        781.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        160,
+        205,
+        206,
+        211
+      ],
+      "safeAnchor": {
+        "x": 478.5,
+        "y": 780.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 204,
+      "center": [
+        803.5,
+        794.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        161,
+        165,
+        208,
+        210,
+        212
+      ],
+      "safeAnchor": {
+        "x": 803.5,
+        "y": 792.5,
+        "clearance": 20.0
+      }
+    },
+    {
+      "id": 205,
+      "center": [
+        454.5,
+        799.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        166,
+        167,
+        203,
+        211
+      ],
+      "safeAnchor": {
+        "x": 456.5,
+        "y": 799.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 206,
+      "center": [
+        506.5,
+        800.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        160,
+        162,
+        203,
+        209,
+        211,
+        214
+      ],
+      "safeAnchor": {
+        "x": 506.5,
+        "y": 796.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 207,
+      "center": [
+        644.5,
+        804.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        196,
+        197,
+        200,
+        201,
+        202,
+        213,
+        217
+      ],
+      "safeAnchor": {
+        "x": 643.5,
+        "y": 802.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 208,
+      "center": [
+        747.5,
+        801.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        163,
+        165,
+        199,
+        204,
+        212,
+        215
+      ],
+      "safeAnchor": {
+        "x": 750.5,
+        "y": 801.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 209,
+      "center": [
+        536.5,
+        806.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        162,
+        164,
+        198,
+        206,
+        214,
+        216,
+        219
+      ],
+      "safeAnchor": {
+        "x": 540.5,
+        "y": 801.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 210,
+      "center": [
+        831.5,
+        826.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        171,
+        204,
+        212,
+        222
+      ],
+      "safeAnchor": {
+        "x": 832.5,
+        "y": 824.5,
+        "clearance": 21.0
+      }
+    },
+    {
+      "id": 211,
+      "center": [
+        478.5,
+        818.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        167,
+        203,
+        205,
+        206,
+        214,
+        220
+      ],
+      "safeAnchor": {
+        "x": 477.5,
+        "y": 816.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 212,
+      "center": [
+        790.5,
+        828.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        204,
+        208,
+        210,
+        215,
+        222,
+        224
+      ],
+      "safeAnchor": {
+        "x": 790.5,
+        "y": 827.5,
+        "clearance": 20.0
+      }
+    },
+    {
+      "id": 213,
+      "center": [
+        633.5,
+        831.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        200,
+        207,
+        217,
+        221,
+        226
+      ],
+      "safeAnchor": {
+        "x": 630.5,
+        "y": 830.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 214,
+      "center": [
+        508.5,
+        826.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        206,
+        209,
+        211,
+        219,
+        220,
+        225
+      ],
+      "safeAnchor": {
+        "x": 505.5,
+        "y": 831.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 215,
+      "center": [
+        750.5,
+        836.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        199,
+        208,
+        212,
+        218,
+        224,
+        227
+      ],
+      "safeAnchor": {
+        "x": 750.5,
+        "y": 837.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 216,
+      "center": [
+        561.5,
+        836.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        198,
+        200,
+        209,
+        219,
+        223,
+        229
+      ],
+      "safeAnchor": {
+        "x": 561.5,
+        "y": 837.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 217,
+      "center": [
+        662.5,
+        845.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        201,
+        207,
+        213,
+        218,
+        226,
+        230,
+        231
+      ],
+      "safeAnchor": {
+        "x": 662.5,
+        "y": 844.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 218,
+      "center": [
+        715.5,
+        841.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        199,
+        201,
+        215,
+        217,
+        227,
+        230
+      ],
+      "safeAnchor": {
+        "x": 711.5,
+        "y": 843.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 219,
+      "center": [
+        533.5,
+        845.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        209,
+        214,
+        216,
+        225,
+        229
+      ],
+      "safeAnchor": {
+        "x": 532.5,
+        "y": 845.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 220,
+      "center": [
+        481.5,
+        846.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        167,
+        211,
+        214,
+        225,
+        228
+      ],
+      "safeAnchor": {
+        "x": 482.5,
+        "y": 847.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 221,
+      "center": [
+        614.5,
+        853.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        200,
+        213,
+        223,
+        226,
+        232
+      ],
+      "safeAnchor": {
+        "x": 614.5,
+        "y": 851.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 222,
+      "center": [
+        805.5,
+        860.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        171,
+        172,
+        210,
+        212,
+        224,
+        236,
+        239
+      ],
+      "safeAnchor": {
+        "x": 807.5,
+        "y": 858.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 223,
+      "center": [
+        579.5,
+        862.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        216,
+        221,
+        229,
+        232,
+        235
+      ],
+      "safeAnchor": {
+        "x": 577.5,
+        "y": 861.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 224,
+      "center": [
+        772.5,
+        866.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        212,
+        215,
+        222,
+        227,
+        236,
+        238
+      ],
+      "safeAnchor": {
+        "x": 771.5,
+        "y": 863.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 225,
+      "center": [
+        502.5,
+        865.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        214,
+        219,
+        220,
+        228,
+        229,
+        233,
+        234
+      ],
+      "safeAnchor": {
+        "x": 499.5,
+        "y": 866.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 226,
+      "center": [
+        639.5,
+        869.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        213,
+        217,
+        221,
+        231,
+        232,
+        240
+      ],
+      "safeAnchor": {
+        "x": 640.5,
+        "y": 865.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 227,
+      "center": [
+        736.5,
+        869.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        215,
+        218,
+        224,
+        230,
+        238
+      ],
+      "safeAnchor": {
+        "x": 734.5,
+        "y": 867.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 228,
+      "center": [
+        456.5,
+        874.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        167,
+        168,
+        220,
+        225,
+        234,
+        237
+      ],
+      "safeAnchor": {
+        "x": 457.5,
+        "y": 874.5,
+        "clearance": 20.0
+      }
+    },
+    {
+      "id": 229,
+      "center": [
+        546.5,
+        875.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        216,
+        219,
+        223,
+        225,
+        233,
+        235,
+        242
+      ],
+      "safeAnchor": {
+        "x": 545.5,
+        "y": 875.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 230,
+      "center": [
+        702.5,
+        881.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        217,
+        218,
+        227,
+        231,
+        238,
+        241,
+        245
+      ],
+      "safeAnchor": {
+        "x": 704.5,
+        "y": 885.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 231,
+      "center": [
+        669.5,
+        880.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        217,
+        226,
+        230,
+        240,
+        241
+      ],
+      "safeAnchor": {
+        "x": 669.5,
+        "y": 879.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 232,
+      "center": [
+        610.5,
+        882.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        221,
+        223,
+        226,
+        235,
+        240,
+        243
+      ],
+      "safeAnchor": {
+        "x": 603.5,
+        "y": 881.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 233,
+      "center": [
+        517.5,
+        892.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        225,
+        229,
+        234,
+        242,
+        244
+      ],
+      "safeAnchor": {
+        "x": 517.5,
+        "y": 891.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 234,
+      "center": [
+        479.5,
+        898.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        225,
+        228,
+        233,
+        237,
+        244,
+        246
+      ],
+      "safeAnchor": {
+        "x": 477.5,
+        "y": 897.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 235,
+      "center": [
+        573.5,
+        896.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        223,
+        229,
+        232,
+        242,
+        243,
+        247
+      ],
+      "safeAnchor": {
+        "x": 571.5,
+        "y": 896.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 236,
+      "center": [
+        782.5,
+        903.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        222,
+        224,
+        238,
+        239,
+        248,
+        249
+      ],
+      "safeAnchor": {
+        "x": 783.5,
+        "y": 903.5,
+        "clearance": 21.0
+      }
+    },
+    {
+      "id": 237,
+      "center": [
+        440.5,
+        904.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        168,
+        170,
+        228,
+        234,
+        246
+      ],
+      "safeAnchor": {
+        "x": 440.5,
+        "y": 907.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 238,
+      "center": [
+        743.5,
+        907.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        224,
+        227,
+        230,
+        236,
+        245,
+        248,
+        255
+      ],
+      "safeAnchor": {
+        "x": 741.5,
+        "y": 909.5,
+        "clearance": 20.0
+      }
+    },
+    {
+      "id": 239,
+      "center": [
+        820.5,
+        910.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        172,
+        174,
+        222,
+        236,
+        249,
+        382
+      ],
+      "safeAnchor": {
+        "x": 823.5,
+        "y": 912.5,
+        "clearance": 21.0
+      }
+    },
+    {
+      "id": 240,
+      "center": [
+        641.5,
+        905.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        226,
+        231,
+        232,
+        241,
+        243,
+        250,
+        251
+      ],
+      "safeAnchor": {
+        "x": 641.5,
+        "y": 906.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 241,
+      "center": [
+        678.5,
+        912.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        230,
+        231,
+        240,
+        245,
+        250
+      ],
+      "safeAnchor": {
+        "x": 678.5,
+        "y": 913.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 242,
+      "center": [
+        542.5,
+        913.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        229,
+        233,
+        235,
+        244,
+        247,
+        252,
+        254
+      ],
+      "safeAnchor": {
+        "x": 540.5,
+        "y": 912.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 243,
+      "center": [
+        607.5,
+        912.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        232,
+        235,
+        240,
+        247,
+        251
+      ],
+      "safeAnchor": {
+        "x": 604.5,
+        "y": 913.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 244,
+      "center": [
+        505.5,
+        922.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        233,
+        234,
+        242,
+        246,
+        253,
+        254
+      ],
+      "safeAnchor": {
+        "x": 503.5,
+        "y": 922.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 245,
+      "center": [
+        710.5,
+        927.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        230,
+        238,
+        241,
+        250,
+        255,
+        256
+      ],
+      "safeAnchor": {
+        "x": 710.5,
+        "y": 925.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 246,
+      "center": [
+        460.5,
+        929.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        170,
+        234,
+        237,
+        244,
+        253,
+        384
+      ],
+      "safeAnchor": {
+        "x": 459.5,
+        "y": 927.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 247,
+      "center": [
+        584.5,
+        933.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        235,
+        242,
+        243,
+        251,
+        252,
+        257
+      ],
+      "safeAnchor": {
+        "x": 583.5,
+        "y": 929.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 248,
+      "center": [
+        763.5,
+        937.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        236,
+        238,
+        249,
+        255,
+        386,
+        388
+      ],
+      "safeAnchor": {
+        "x": 762.5,
+        "y": 936.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 249,
+      "center": [
+        799.5,
+        937.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        236,
+        239,
+        248,
+        382,
+        386
+      ],
+      "safeAnchor": {
+        "x": 800.5,
+        "y": 934.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 250,
+      "center": [
+        658.5,
+        940.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        240,
+        241,
+        245,
+        251,
+        256,
+        258,
+        260
+      ],
+      "safeAnchor": {
+        "x": 659.5,
+        "y": 938.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 251,
+      "center": [
+        624.5,
+        939.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        240,
+        243,
+        247,
+        250,
+        257,
+        258
+      ],
+      "safeAnchor": {
+        "x": 622.5,
+        "y": 939.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 252,
+      "center": [
+        554.5,
+        942.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        242,
+        247,
+        254,
+        257,
+        259
+      ],
+      "safeAnchor": {
+        "x": 553.5,
+        "y": 941.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 253,
+      "center": [
+        486.5,
+        944.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        244,
+        246,
+        254,
+        384,
+        387
+      ],
+      "safeAnchor": {
+        "x": 486.5,
+        "y": 942.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 254,
+      "center": [
+        522.5,
+        950.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        242,
+        244,
+        252,
+        253,
+        259,
+        387
+      ],
+      "safeAnchor": {
+        "x": 521.5,
+        "y": 950.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 255,
+      "center": [
+        733.5,
+        957.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        238,
+        245,
+        248,
+        256,
+        388
+      ],
+      "safeAnchor": {
+        "x": 732.5,
+        "y": 951.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 256,
+      "center": [
+        697.5,
+        962.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        245,
+        250,
+        255,
+        260,
+        388
+      ],
+      "safeAnchor": {
+        "x": 696.5,
+        "y": 961.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 257,
+      "center": [
+        588.5,
+        967.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        247,
+        251,
+        252,
+        258,
+        259,
+        387,
+        390
+      ],
+      "safeAnchor": {
+        "x": 588.5,
+        "y": 967.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 258,
+      "center": [
+        629.5,
+        971.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        250,
+        251,
+        257,
+        260,
+        390
+      ],
+      "safeAnchor": {
+        "x": 627.5,
+        "y": 971.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 259,
+      "center": [
+        554.5,
+        970.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        252,
+        254,
+        257,
+        387
+      ],
+      "safeAnchor": {
+        "x": 546.5,
+        "y": 969.5,
+        "clearance": 12.0
+      }
+    },
+    {
+      "id": 260,
+      "center": [
+        661.5,
+        973.5
+      ],
+      "colorId": 5,
+      "regionId": 12,
+      "polygon": [],
+      "neighbors": [
+        250,
+        256,
+        258,
+        388,
+        390
+      ],
+      "safeAnchor": {
+        "x": 660.5,
+        "y": 973.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 261,
+      "center": [
+        776.5,
+        1113.5
+      ],
+      "colorId": 5,
+      "regionId": 13,
+      "polygon": [],
+      "neighbors": [
+        175,
+        262,
+        263,
+        393,
+        394,
+        395
+      ],
+      "safeAnchor": {
+        "x": 771.5,
+        "y": 1118.5,
+        "clearance": 13.0
+      }
+    },
+    {
+      "id": 262,
+      "center": [
+        720.5,
+        1132.5
+      ],
+      "colorId": 5,
+      "regionId": 13,
+      "polygon": [],
+      "neighbors": [
+        175,
+        176,
+        177,
+        261,
+        263
+      ],
+      "safeAnchor": {
+        "x": 712.5,
+        "y": 1132.5,
+        "clearance": 12.0
+      }
+    },
+    {
+      "id": 263,
+      "center": [
+        762.5,
+        1145.5
+      ],
+      "colorId": 5,
+      "regionId": 13,
+      "polygon": [],
+      "neighbors": [
+        177,
+        261,
+        262
+      ],
+      "safeAnchor": {
+        "x": 763.5,
+        "y": 1144.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 264,
+      "center": [
+        701.5,
+        242.5
+      ],
+      "colorId": 6,
+      "regionId": 14,
+      "polygon": [],
+      "neighbors": [
+        65,
+        69,
+        73,
+        82,
+        86,
+        94,
+        265,
+        306,
+        310
+      ],
+      "safeAnchor": {
+        "x": 701.5,
+        "y": 240.5,
+        "clearance": 6.0
+      }
+    },
+    {
+      "id": 265,
+      "center": [
+        677.5,
+        286.5
+      ],
+      "colorId": 6,
+      "regionId": 14,
+      "polygon": [],
+      "neighbors": [
+        86,
+        97,
+        98,
+        264,
+        306,
+        307,
+        311,
+        313
+      ],
+      "safeAnchor": {
+        "x": 675.5,
+        "y": 289.5,
+        "clearance": 5.0
+      }
+    },
+    {
+      "id": 266,
+      "center": [
+        819.5,
+        392.5
+      ],
+      "colorId": 6,
+      "regionId": 15,
+      "polygon": [],
+      "neighbors": [
+        8,
+        9,
+        10,
+        267
+      ],
+      "safeAnchor": {
+        "x": 820.5,
+        "y": 391.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 267,
+      "center": [
+        821.5,
+        422.5
+      ],
+      "colorId": 6,
+      "regionId": 15,
+      "polygon": [],
+      "neighbors": [
+        9,
+        10,
+        11,
+        129,
+        266,
+        268
+      ],
+      "safeAnchor": {
+        "x": 808.5,
+        "y": 420.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 268,
+      "center": [
+        799.5,
+        449.5
+      ],
+      "colorId": 6,
+      "regionId": 15,
+      "polygon": [],
+      "neighbors": [
+        11,
+        12,
+        129,
+        267,
+        326
+      ],
+      "safeAnchor": {
+        "x": 800.5,
+        "y": 449.5,
+        "clearance": 13.0
+      }
+    },
+    {
+      "id": 269,
+      "center": [
+        450.5,
+        447.5
+      ],
+      "colorId": 6,
+      "regionId": 16,
+      "polygon": [],
+      "neighbors": [
+        22,
+        23,
+        24,
+        270,
+        323
+      ],
+      "safeAnchor": {
+        "x": 452.5,
+        "y": 445.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 270,
+      "center": [
+        473.5,
+        481.5
+      ],
+      "colorId": 6,
+      "regionId": 16,
+      "polygon": [],
+      "neighbors": [
+        24,
+        269,
+        271,
+        323
+      ],
+      "safeAnchor": {
+        "x": 471.5,
+        "y": 479.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 271,
+      "center": [
+        485.5,
+        465.5
+      ],
+      "colorId": 6,
+      "regionId": 16,
+      "polygon": [],
+      "neighbors": [
+        24,
+        25,
+        26,
+        28,
+        270,
+        323,
+        330,
+        338
+      ],
+      "safeAnchor": {
+        "x": 485.5,
+        "y": 465.5,
+        "clearance": 2.0
+      }
+    },
+    {
+      "id": 272,
+      "center": [
+        663.5,
+        485.5
+      ],
+      "colorId": 6,
+      "regionId": 17,
+      "polygon": [],
+      "neighbors": [
+        273,
+        325,
+        328,
+        332,
+        337,
+        339,
+        342,
+        343
+      ],
+      "safeAnchor": {
+        "x": 623.5,
+        "y": 490.5,
+        "clearance": 10.0
+      }
+    },
+    {
+      "id": 273,
+      "center": [
+        644.5,
+        506.5
+      ],
+      "colorId": 6,
+      "regionId": 17,
+      "polygon": [],
+      "neighbors": [
+        272,
+        342,
+        343
+      ],
+      "safeAnchor": {
+        "x": 640.5,
+        "y": 506.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 274,
+      "center": [
+        624.5,
+        566.5
+      ],
+      "colorId": 6,
+      "regionId": 18,
+      "polygon": [],
+      "neighbors": [
+        31,
+        275,
+        277,
+        341,
+        343,
+        344
+      ],
+      "safeAnchor": {
+        "x": 624.5,
+        "y": 563.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 275,
+      "center": [
+        657.5,
+        565.5
+      ],
+      "colorId": 6,
+      "regionId": 18,
+      "polygon": [],
+      "neighbors": [
+        20,
+        274,
+        276,
+        277,
+        342,
+        343,
+        345
+      ],
+      "safeAnchor": {
+        "x": 657.5,
+        "y": 565.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 276,
+      "center": [
+        683.5,
+        553.5
+      ],
+      "colorId": 6,
+      "regionId": 18,
+      "polygon": [],
+      "neighbors": [
+        20,
+        133,
+        275,
+        277,
+        377,
+        378
+      ],
+      "safeAnchor": {
+        "x": 682.5,
+        "y": 557.5,
+        "clearance": 4.0
+      }
+    },
+    {
+      "id": 277,
+      "center": [
+        595.5,
+        569.5
+      ],
+      "colorId": 6,
+      "regionId": 18,
+      "polygon": [],
+      "neighbors": [
+        31,
+        132,
+        136,
+        138,
+        274,
+        275,
+        276,
+        378,
+        379,
+        380
+      ],
+      "safeAnchor": {
+        "x": 593.5,
+        "y": 569.5,
+        "clearance": 12.0
+      }
+    },
+    {
+      "id": 278,
+      "center": [
+        345.5,
+        670.5
+      ],
+      "colorId": 6,
+      "regionId": 19,
+      "polygon": [],
+      "neighbors": [
+        141,
+        279,
+        281,
+        282,
+        346,
+        347,
+        348,
+        349,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376
+      ],
+      "safeAnchor": {
+        "x": 345.5,
+        "y": 669.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 279,
+      "center": [
+        496.5,
+        686.5
+      ],
+      "colorId": 6,
+      "regionId": 19,
+      "polygon": [],
+      "neighbors": [
+        141,
+        278,
+        280,
+        283,
+        349
+      ],
+      "safeAnchor": {
+        "x": 485.5,
+        "y": 669.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 280,
+      "center": [
+        520.5,
+        692.5
+      ],
+      "colorId": 6,
+      "regionId": 19,
+      "polygon": [],
+      "neighbors": [
+        141,
+        148,
+        279,
+        283
+      ],
+      "safeAnchor": {
+        "x": 521.5,
+        "y": 691.5,
+        "clearance": 11.0
+      }
+    },
+    {
+      "id": 281,
+      "center": [
+        354.5,
+        703.5
+      ],
+      "colorId": 6,
+      "regionId": 19,
+      "polygon": [],
+      "neighbors": [
+        278,
+        282
+      ],
+      "safeAnchor": {
+        "x": 355.5,
+        "y": 703.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 282,
+      "center": [
+        387.5,
+        748.5
+      ],
+      "colorId": 6,
+      "regionId": 19,
+      "polygon": [],
+      "neighbors": [
+        278,
+        281,
+        283,
+        347,
+        350
+      ],
+      "safeAnchor": {
+        "x": 387.5,
+        "y": 745.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 283,
+      "center": [
+        466.5,
+        731.5
+      ],
+      "colorId": 6,
+      "regionId": 19,
+      "polygon": [],
+      "neighbors": [
+        279,
+        280,
+        282,
+        349,
+        350
+      ],
+      "safeAnchor": {
+        "x": 477.5,
+        "y": 724.5,
+        "clearance": 9.0
+      }
+    },
+    {
+      "id": 284,
+      "center": [
+        768.5,
+        694.5
+      ],
+      "colorId": 6,
+      "regionId": 20,
+      "polygon": [],
+      "neighbors": [
+        145,
+        151,
+        152,
+        285,
+        286,
+        351,
+        352,
+        353,
+        354,
+        355
+      ],
+      "safeAnchor": {
+        "x": 768.5,
+        "y": 693.5,
+        "clearance": 10.0
+      }
+    },
+    {
+      "id": 285,
+      "center": [
+        753.5,
+        693.5
+      ],
+      "colorId": 6,
+      "regionId": 20,
+      "polygon": [],
+      "neighbors": [
+        152,
+        284,
+        286,
+        354,
+        355
+      ],
+      "safeAnchor": {
+        "x": 753.5,
+        "y": 693.5,
+        "clearance": 2.0
+      }
+    },
+    {
+      "id": 286,
+      "center": [
+        935.5,
+        780.5
+      ],
+      "colorId": 6,
+      "regionId": 20,
+      "polygon": [],
+      "neighbors": [
+        284,
+        285,
+        355,
+        356,
+        357
+      ],
+      "safeAnchor": {
+        "x": 942.5,
+        "y": 774.5,
+        "clearance": 10.0
+      }
+    },
+    {
+      "id": 287,
+      "center": [
+        750.5,
+        1006.5
+      ],
+      "colorId": 6,
+      "regionId": 21,
+      "polygon": [],
+      "neighbors": [
+        289,
+        290,
+        388
+      ],
+      "safeAnchor": {
+        "x": 750.5,
+        "y": 1007.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 288,
+      "center": [
+        691.5,
+        1017.5
+      ],
+      "colorId": 6,
+      "regionId": 21,
+      "polygon": [],
+      "neighbors": [
+        289,
+        291,
+        388,
+        390,
+        392
+      ],
+      "safeAnchor": {
+        "x": 690.5,
+        "y": 1016.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 289,
+      "center": [
+        722.5,
+        1021.5
+      ],
+      "colorId": 6,
+      "regionId": 21,
+      "polygon": [],
+      "neighbors": [
+        287,
+        288,
+        290,
+        291,
+        388
+      ],
+      "safeAnchor": {
+        "x": 722.5,
+        "y": 1018.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 290,
+      "center": [
+        748.5,
+        1042.5
+      ],
+      "colorId": 6,
+      "regionId": 21,
+      "polygon": [],
+      "neighbors": [
+        287,
+        289,
+        291,
+        393,
+        395
+      ],
+      "safeAnchor": {
+        "x": 745.5,
+        "y": 1043.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 291,
+      "center": [
+        709.5,
+        1050.5
+      ],
+      "colorId": 6,
+      "regionId": 21,
+      "polygon": [],
+      "neighbors": [
+        288,
+        289,
+        290,
+        394,
+        395
+      ],
+      "safeAnchor": {
+        "x": 713.5,
+        "y": 1052.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 292,
+      "center": [
+        543.5,
+        1014.5
+      ],
+      "colorId": 6,
+      "regionId": 22,
+      "polygon": [],
+      "neighbors": [
+        294,
+        295,
+        387,
+        391,
+        397
+      ],
+      "safeAnchor": {
+        "x": 542.5,
+        "y": 1011.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 293,
+      "center": [
+        604.5,
+        1020.5
+      ],
+      "colorId": 6,
+      "regionId": 22,
+      "polygon": [],
+      "neighbors": [
+        294,
+        296,
+        390,
+        391
+      ],
+      "safeAnchor": {
+        "x": 602.5,
+        "y": 1013.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 294,
+      "center": [
+        571.5,
+        1026.5
+      ],
+      "colorId": 6,
+      "regionId": 22,
+      "polygon": [],
+      "neighbors": [
+        292,
+        293,
+        295,
+        296,
+        391
+      ],
+      "safeAnchor": {
+        "x": 571.5,
+        "y": 1026.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 295,
+      "center": [
+        557.5,
+        1055.5
+      ],
+      "colorId": 6,
+      "regionId": 22,
+      "polygon": [],
+      "neighbors": [
+        292,
+        294,
+        296,
+        397,
+        398
+      ],
+      "safeAnchor": {
+        "x": 555.5,
+        "y": 1054.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 296,
+      "center": [
+        590.5,
+        1058.5
+      ],
+      "colorId": 6,
+      "regionId": 22,
+      "polygon": [],
+      "neighbors": [
+        293,
+        294,
+        295,
+        396,
+        398
+      ],
+      "safeAnchor": {
+        "x": 593.5,
+        "y": 1058.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 297,
+      "center": [
+        261.5,
+        448.5
+      ],
+      "colorId": 7,
+      "regionId": 23,
+      "polygon": [],
+      "neighbors": [
+        298,
+        300,
+        358
+      ],
+      "safeAnchor": {
+        "x": 261.5,
+        "y": 446.5,
+        "clearance": 8.0
+      }
+    },
+    {
+      "id": 298,
+      "center": [
+        292.5,
+        463.5
+      ],
+      "colorId": 7,
+      "regionId": 23,
+      "polygon": [],
+      "neighbors": [
+        297,
+        299,
+        358
+      ],
+      "safeAnchor": {
+        "x": 292.5,
+        "y": 461.5,
+        "clearance": 13.0
+      }
+    },
+    {
+      "id": 299,
+      "center": [
+        335.5,
+        489.5
+      ],
+      "colorId": 7,
+      "regionId": 23,
+      "polygon": [],
+      "neighbors": [
+        119,
+        122,
+        298,
+        302,
+        304,
+        358,
+        361
+      ],
+      "safeAnchor": {
+        "x": 337.5,
+        "y": 487.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 300,
+      "center": [
+        263.5,
+        470.5
+      ],
+      "colorId": 7,
+      "regionId": 23,
+      "polygon": [],
+      "neighbors": [
+        297,
+        301,
+        358,
+        359
+      ],
+      "safeAnchor": {
+        "x": 263.5,
+        "y": 471.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 301,
+      "center": [
+        246.5,
+        519.5
+      ],
+      "colorId": 7,
+      "regionId": 23,
+      "polygon": [],
+      "neighbors": [
+        300,
+        305,
+        359,
+        360
+      ],
+      "safeAnchor": {
+        "x": 247.5,
+        "y": 521.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 302,
+      "center": [
+        325.5,
+        512.5
+      ],
+      "colorId": 7,
+      "regionId": 23,
+      "polygon": [],
+      "neighbors": [
+        299,
+        304,
+        358
+      ],
+      "safeAnchor": {
+        "x": 316.5,
+        "y": 507.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 303,
+      "center": [
+        299.5,
+        533.5
+      ],
+      "colorId": 7,
+      "regionId": 23,
+      "polygon": [],
+      "neighbors": [
+        304,
+        305,
+        358,
+        360
+      ],
+      "safeAnchor": {
+        "x": 300.5,
+        "y": 532.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 304,
+      "center": [
+        348.5,
+        547.5
+      ],
+      "colorId": 7,
+      "regionId": 23,
+      "polygon": [],
+      "neighbors": [
+        299,
+        302,
+        303,
+        305,
+        358,
+        361,
+        362,
+        364
+      ],
+      "safeAnchor": {
+        "x": 347.5,
+        "y": 545.5,
+        "clearance": 13.0
+      }
+    },
+    {
+      "id": 305,
+      "center": [
+        282.5,
+        561.5
+      ],
+      "colorId": 7,
+      "regionId": 23,
+      "polygon": [],
+      "neighbors": [
+        301,
+        303,
+        304,
+        360,
+        364,
+        369,
+        372
+      ],
+      "safeAnchor": {
+        "x": 282.5,
+        "y": 563.5,
+        "clearance": 12.0
+      }
+    },
+    {
+      "id": 306,
+      "center": [
+        704.5,
+        284.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        264,
+        265,
+        307,
+        308,
+        310
+      ],
+      "safeAnchor": {
+        "x": 705.5,
+        "y": 282.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 307,
+      "center": [
+        672.5,
+        316.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        265,
+        306,
+        308,
+        309,
+        311,
+        312
+      ],
+      "safeAnchor": {
+        "x": 670.5,
+        "y": 316.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 308,
+      "center": [
+        713.5,
+        303.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        306,
+        307,
+        309,
+        310,
+        314
+      ],
+      "safeAnchor": {
+        "x": 706.5,
+        "y": 306.5,
+        "clearance": 5.0
+      }
+    },
+    {
+      "id": 309,
+      "center": [
+        722.5,
+        322.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        307,
+        308,
+        312,
+        314
+      ],
+      "safeAnchor": {
+        "x": 721.5,
+        "y": 323.5,
+        "clearance": 11.0
+      }
+    },
+    {
+      "id": 310,
+      "center": [
+        770.5,
+        336.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        7,
+        94,
+        99,
+        264,
+        306,
+        308,
+        314,
+        316
+      ],
+      "safeAnchor": {
+        "x": 770.5,
+        "y": 334.5,
+        "clearance": 11.0
+      }
+    },
+    {
+      "id": 311,
+      "center": [
+        652.5,
+        340.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        265,
+        307,
+        312,
+        313,
+        317,
+        318
+      ],
+      "safeAnchor": {
+        "x": 653.5,
+        "y": 339.5,
+        "clearance": 22.0
+      }
+    },
+    {
+      "id": 312,
+      "center": [
+        701.5,
+        341.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        125,
+        307,
+        309,
+        311,
+        314,
+        317
+      ],
+      "safeAnchor": {
+        "x": 700.5,
+        "y": 340.5,
+        "clearance": 20.0
+      }
+    },
+    {
+      "id": 313,
+      "center": [
+        605.5,
+        351.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        98,
+        104,
+        106,
+        265,
+        311,
+        315,
+        318,
+        319
+      ],
+      "safeAnchor": {
+        "x": 609.5,
+        "y": 350.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 314,
+      "center": [
+        743.5,
+        341.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        125,
+        126,
+        308,
+        309,
+        310,
+        312,
+        316
+      ],
+      "safeAnchor": {
+        "x": 742.5,
+        "y": 340.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 315,
+      "center": [
+        564.5,
+        365.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        32,
+        33,
+        104,
+        112,
+        313,
+        319,
+        320
+      ],
+      "safeAnchor": {
+        "x": 564.5,
+        "y": 365.5,
+        "clearance": 20.0
+      }
+    },
+    {
+      "id": 316,
+      "center": [
+        775.5,
+        366.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        7,
+        9,
+        126,
+        129,
+        310,
+        314
+      ],
+      "safeAnchor": {
+        "x": 775.5,
+        "y": 363.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 317,
+      "center": [
+        670.5,
+        372.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        125,
+        311,
+        312,
+        318,
+        321
+      ],
+      "safeAnchor": {
+        "x": 674.5,
+        "y": 367.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 318,
+      "center": [
+        633.5,
+        376.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        311,
+        313,
+        317,
+        319,
+        321,
+        322
+      ],
+      "safeAnchor": {
+        "x": 631.5,
+        "y": 373.5,
+        "clearance": 20.0
+      }
+    },
+    {
+      "id": 319,
+      "center": [
+        594.5,
+        386.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        33,
+        313,
+        315,
+        318,
+        322
+      ],
+      "safeAnchor": {
+        "x": 591.5,
+        "y": 386.5,
+        "clearance": 21.0
+      }
+    },
+    {
+      "id": 320,
+      "center": [
+        488.5,
+        398.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        32,
+        112,
+        115,
+        315,
+        323
+      ],
+      "safeAnchor": {
+        "x": 487.5,
+        "y": 397.5,
+        "clearance": 10.0
+      }
+    },
+    {
+      "id": 321,
+      "center": [
+        655.5,
+        407.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        125,
+        317,
+        318,
+        322,
+        324,
+        325
+      ],
+      "safeAnchor": {
+        "x": 654.5,
+        "y": 407.5,
+        "clearance": 21.0
+      }
+    },
+    {
+      "id": 322,
+      "center": [
+        612.5,
+        421.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        33,
+        318,
+        319,
+        321,
+        325,
+        328
+      ],
+      "safeAnchor": {
+        "x": 612.5,
+        "y": 420.5,
+        "clearance": 20.0
+      }
+    },
+    {
+      "id": 323,
+      "center": [
+        489.5,
+        440.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        22,
+        32,
+        34,
+        115,
+        269,
+        270,
+        271,
+        320,
+        330
+      ],
+      "safeAnchor": {
+        "x": 487.5,
+        "y": 434.5,
+        "clearance": 11.0
+      }
+    },
+    {
+      "id": 324,
+      "center": [
+        673.5,
+        437.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        125,
+        321,
+        325,
+        329,
+        332
+      ],
+      "safeAnchor": {
+        "x": 673.5,
+        "y": 435.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 325,
+      "center": [
+        639.5,
+        454.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        272,
+        321,
+        322,
+        324,
+        328,
+        332
+      ],
+      "safeAnchor": {
+        "x": 640.5,
+        "y": 453.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 326,
+      "center": [
+        766.5,
+        457.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        12,
+        127,
+        129,
+        268,
+        327,
+        336
+      ],
+      "safeAnchor": {
+        "x": 768.5,
+        "y": 456.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 327,
+      "center": [
+        738.5,
+        456.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        127,
+        131,
+        326,
+        329,
+        333,
+        336
+      ],
+      "safeAnchor": {
+        "x": 738.5,
+        "y": 455.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 328,
+      "center": [
+        603.5,
+        458.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        33,
+        35,
+        272,
+        322,
+        325,
+        331,
+        337
+      ],
+      "safeAnchor": {
+        "x": 602.5,
+        "y": 459.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 329,
+      "center": [
+        698.5,
+        454.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        125,
+        131,
+        324,
+        327,
+        332,
+        333,
+        335
+      ],
+      "safeAnchor": {
+        "x": 698.5,
+        "y": 453.5,
+        "clearance": 12.0
+      }
+    },
+    {
+      "id": 330,
+      "center": [
+        508.5,
+        472.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        34,
+        271,
+        323,
+        334,
+        338
+      ],
+      "safeAnchor": {
+        "x": 507.5,
+        "y": 468.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 331,
+      "center": [
+        576.5,
+        477.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        35,
+        328,
+        334,
+        337,
+        341
+      ],
+      "safeAnchor": {
+        "x": 577.5,
+        "y": 476.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 332,
+      "center": [
+        677.5,
+        465.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        272,
+        324,
+        325,
+        329,
+        335,
+        339
+      ],
+      "safeAnchor": {
+        "x": 676.5,
+        "y": 467.5,
+        "clearance": 12.0
+      }
+    },
+    {
+      "id": 333,
+      "center": [
+        729.5,
+        481.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        327,
+        329,
+        335,
+        336,
+        340
+      ],
+      "safeAnchor": {
+        "x": 729.5,
+        "y": 480.5,
+        "clearance": 12.0
+      }
+    },
+    {
+      "id": 334,
+      "center": [
+        545.5,
+        483.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        34,
+        35,
+        330,
+        331,
+        338,
+        341
+      ],
+      "safeAnchor": {
+        "x": 542.5,
+        "y": 484.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 335,
+      "center": [
+        702.5,
+        481.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        329,
+        332,
+        333,
+        339,
+        340
+      ],
+      "safeAnchor": {
+        "x": 700.5,
+        "y": 480.5,
+        "clearance": 13.0
+      }
+    },
+    {
+      "id": 336,
+      "center": [
+        760.5,
+        485.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        12,
+        15,
+        18,
+        326,
+        327,
+        333,
+        340,
+        345
+      ],
+      "safeAnchor": {
+        "x": 761.5,
+        "y": 486.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 337,
+      "center": [
+        597.5,
+        501.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        272,
+        328,
+        331,
+        341,
+        343,
+        344
+      ],
+      "safeAnchor": {
+        "x": 596.5,
+        "y": 498.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 338,
+      "center": [
+        527.5,
+        508.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        28,
+        271,
+        330,
+        334,
+        341
+      ],
+      "safeAnchor": {
+        "x": 524.5,
+        "y": 505.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 339,
+      "center": [
+        697.5,
+        509.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        272,
+        332,
+        335,
+        340,
+        342,
+        345
+      ],
+      "safeAnchor": {
+        "x": 695.5,
+        "y": 510.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 340,
+      "center": [
+        733.5,
+        503.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        333,
+        335,
+        336,
+        339,
+        345
+      ],
+      "safeAnchor": {
+        "x": 728.5,
+        "y": 508.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 341,
+      "center": [
+        561.5,
+        520.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        28,
+        31,
+        274,
+        331,
+        334,
+        337,
+        338,
+        344
+      ],
+      "safeAnchor": {
+        "x": 561.5,
+        "y": 518.5,
+        "clearance": 20.0
+      }
+    },
+    {
+      "id": 342,
+      "center": [
+        670.5,
+        527.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        272,
+        273,
+        275,
+        339,
+        343,
+        345
+      ],
+      "safeAnchor": {
+        "x": 670.5,
+        "y": 523.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 343,
+      "center": [
+        634.5,
+        538.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        272,
+        273,
+        274,
+        275,
+        337,
+        342,
+        344
+      ],
+      "safeAnchor": {
+        "x": 631.5,
+        "y": 533.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 344,
+      "center": [
+        601.5,
+        532.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        274,
+        337,
+        341,
+        343
+      ],
+      "safeAnchor": {
+        "x": 599.5,
+        "y": 532.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 345,
+      "center": [
+        712.5,
+        527.5
+      ],
+      "colorId": 8,
+      "regionId": 24,
+      "polygon": [],
+      "neighbors": [
+        18,
+        20,
+        275,
+        336,
+        339,
+        340,
+        342
+      ],
+      "safeAnchor": {
+        "x": 712.5,
+        "y": 526.5,
+        "clearance": 6.0
+      }
+    },
+    {
+      "id": 346,
+      "center": [
+        385.5,
+        666.5
+      ],
+      "colorId": 8,
+      "regionId": 25,
+      "polygon": [],
+      "neighbors": [
+        278,
+        347
+      ],
+      "safeAnchor": {
+        "x": 386.5,
+        "y": 664.5,
+        "clearance": 13.0
+      }
+    },
+    {
+      "id": 347,
+      "center": [
+        398.5,
+        696.5
+      ],
+      "colorId": 8,
+      "regionId": 25,
+      "polygon": [],
+      "neighbors": [
+        278,
+        282,
+        346,
+        348,
+        350
+      ],
+      "safeAnchor": {
+        "x": 398.5,
+        "y": 696.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 348,
+      "center": [
+        427.5,
+        688.5
+      ],
+      "colorId": 8,
+      "regionId": 25,
+      "polygon": [],
+      "neighbors": [
+        278,
+        347,
+        349,
+        350
+      ],
+      "safeAnchor": {
+        "x": 426.5,
+        "y": 688.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 349,
+      "center": [
+        461.5,
+        688.5
+      ],
+      "colorId": 8,
+      "regionId": 25,
+      "polygon": [],
+      "neighbors": [
+        278,
+        279,
+        283,
+        348,
+        350
+      ],
+      "safeAnchor": {
+        "x": 461.5,
+        "y": 688.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 350,
+      "center": [
+        445.5,
+        712.5
+      ],
+      "colorId": 8,
+      "regionId": 25,
+      "polygon": [],
+      "neighbors": [
+        282,
+        283,
+        347,
+        348,
+        349
+      ],
+      "safeAnchor": {
+        "x": 443.5,
+        "y": 712.5,
+        "clearance": 13.0
+      }
+    },
+    {
+      "id": 351,
+      "center": [
+        801.5,
+        689.5
+      ],
+      "colorId": 8,
+      "regionId": 26,
+      "polygon": [],
+      "neighbors": [
+        284,
+        352
+      ],
+      "safeAnchor": {
+        "x": 802.5,
+        "y": 687.5,
+        "clearance": 20.0
+      }
+    },
+    {
+      "id": 352,
+      "center": [
+        810.5,
+        723.5
+      ],
+      "colorId": 8,
+      "regionId": 26,
+      "polygon": [],
+      "neighbors": [
+        284,
+        351,
+        353,
+        354
+      ],
+      "safeAnchor": {
+        "x": 809.5,
+        "y": 723.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 353,
+      "center": [
+        842.5,
+        730.5
+      ],
+      "colorId": 8,
+      "regionId": 26,
+      "polygon": [],
+      "neighbors": [
+        284,
+        352,
+        354,
+        355
+      ],
+      "safeAnchor": {
+        "x": 844.5,
+        "y": 730.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 354,
+      "center": [
+        833.5,
+        754.5
+      ],
+      "colorId": 8,
+      "regionId": 26,
+      "polygon": [],
+      "neighbors": [
+        284,
+        285,
+        352,
+        353,
+        355
+      ],
+      "safeAnchor": {
+        "x": 831.5,
+        "y": 753.5,
+        "clearance": 13.0
+      }
+    },
+    {
+      "id": 355,
+      "center": [
+        866.5,
+        764.5
+      ],
+      "colorId": 8,
+      "regionId": 26,
+      "polygon": [],
+      "neighbors": [
+        284,
+        285,
+        286,
+        353,
+        354,
+        356,
+        357
+      ],
+      "safeAnchor": {
+        "x": 869.5,
+        "y": 763.5,
+        "clearance": 21.0
+      }
+    },
+    {
+      "id": 356,
+      "center": [
+        902.5,
+        762.5
+      ],
+      "colorId": 8,
+      "regionId": 26,
+      "polygon": [],
+      "neighbors": [
+        286,
+        355,
+        357
+      ],
+      "safeAnchor": {
+        "x": 901.5,
+        "y": 762.5,
+        "clearance": 8.0
+      }
+    },
+    {
+      "id": 357,
+      "center": [
+        885.5,
+        786.5
+      ],
+      "colorId": 8,
+      "regionId": 26,
+      "polygon": [],
+      "neighbors": [
+        286,
+        355,
+        356
+      ],
+      "safeAnchor": {
+        "x": 885.5,
+        "y": 784.5,
+        "clearance": 13.0
+      }
+    },
+    {
+      "id": 358,
+      "center": [
+        315.5,
+        473.5
+      ],
+      "colorId": 9,
+      "regionId": 27,
+      "polygon": [],
+      "neighbors": [
+        297,
+        298,
+        299,
+        300,
+        302,
+        303,
+        304,
+        359,
+        360
+      ],
+      "safeAnchor": {
+        "x": 315.5,
+        "y": 474.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 359,
+      "center": [
+        249.5,
+        505.5
+      ],
+      "colorId": 9,
+      "regionId": 27,
+      "polygon": [],
+      "neighbors": [
+        300,
+        301,
+        358,
+        360
+      ],
+      "safeAnchor": {
+        "x": 251.5,
+        "y": 492.5,
+        "clearance": 13.0
+      }
+    },
+    {
+      "id": 360,
+      "center": [
+        265.5,
+        539.5
+      ],
+      "colorId": 9,
+      "regionId": 27,
+      "polygon": [],
+      "neighbors": [
+        301,
+        303,
+        305,
+        358,
+        359
+      ],
+      "safeAnchor": {
+        "x": 266.5,
+        "y": 536.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 361,
+      "center": [
+        363.5,
+        527.5
+      ],
+      "colorId": 10,
+      "regionId": 28,
+      "polygon": [],
+      "neighbors": [
+        122,
+        124,
+        299,
+        304,
+        362
+      ],
+      "safeAnchor": {
+        "x": 364.5,
+        "y": 526.5,
+        "clearance": 12.0
+      }
+    },
+    {
+      "id": 362,
+      "center": [
+        383.5,
+        552.5
+      ],
+      "colorId": 10,
+      "regionId": 28,
+      "polygon": [],
+      "neighbors": [
+        27,
+        124,
+        304,
+        361,
+        363,
+        366,
+        368
+      ],
+      "safeAnchor": {
+        "x": 382.5,
+        "y": 550.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 363,
+      "center": [
+        430.5,
+        575.5
+      ],
+      "colorId": 10,
+      "regionId": 28,
+      "polygon": [],
+      "neighbors": [
+        27,
+        29,
+        362,
+        367,
+        368,
+        370
+      ],
+      "safeAnchor": {
+        "x": 428.5,
+        "y": 575.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 364,
+      "center": [
+        340.5,
+        573.5
+      ],
+      "colorId": 10,
+      "regionId": 28,
+      "polygon": [],
+      "neighbors": [
+        304,
+        305,
+        366,
+        371,
+        372
+      ],
+      "safeAnchor": {
+        "x": 339.5,
+        "y": 574.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 365,
+      "center": [
+        493.5,
+        576.5
+      ],
+      "colorId": 10,
+      "regionId": 28,
+      "polygon": [],
+      "neighbors": [
+        28,
+        30,
+        132,
+        135,
+        367
+      ],
+      "safeAnchor": {
+        "x": 492.5,
+        "y": 576.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 366,
+      "center": [
+        368.5,
+        585.5
+      ],
+      "colorId": 10,
+      "regionId": 28,
+      "polygon": [],
+      "neighbors": [
+        362,
+        364,
+        368,
+        371,
+        373
+      ],
+      "safeAnchor": {
+        "x": 369.5,
+        "y": 580.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 367,
+      "center": [
+        463.5,
+        590.5
+      ],
+      "colorId": 10,
+      "regionId": 28,
+      "polygon": [],
+      "neighbors": [
+        29,
+        30,
+        135,
+        363,
+        365,
+        370,
+        374
+      ],
+      "safeAnchor": {
+        "x": 463.5,
+        "y": 588.5,
+        "clearance": 20.0
+      }
+    },
+    {
+      "id": 368,
+      "center": [
+        401.5,
+        591.5
+      ],
+      "colorId": 10,
+      "regionId": 28,
+      "polygon": [],
+      "neighbors": [
+        362,
+        363,
+        366,
+        370,
+        373
+      ],
+      "safeAnchor": {
+        "x": 401.5,
+        "y": 588.5,
+        "clearance": 17.0
+      }
+    },
+    {
+      "id": 369,
+      "center": [
+        323.5,
+        594.5
+      ],
+      "colorId": 10,
+      "regionId": 28,
+      "polygon": [],
+      "neighbors": [
+        305,
+        372
+      ],
+      "safeAnchor": {
+        "x": 325.5,
+        "y": 599.5,
+        "clearance": 6.0
+      }
+    },
+    {
+      "id": 370,
+      "center": [
+        431.5,
+        613.5
+      ],
+      "colorId": 10,
+      "regionId": 28,
+      "polygon": [],
+      "neighbors": [
+        363,
+        367,
+        368,
+        373,
+        374,
+        375,
+        376
+      ],
+      "safeAnchor": {
+        "x": 430.5,
+        "y": 613.5,
+        "clearance": 20.0
+      }
+    },
+    {
+      "id": 371,
+      "center": [
+        359.5,
+        616.5
+      ],
+      "colorId": 10,
+      "regionId": 28,
+      "polygon": [],
+      "neighbors": [
+        278,
+        364,
+        366,
+        372,
+        373
+      ],
+      "safeAnchor": {
+        "x": 358.5,
+        "y": 616.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 372,
+      "center": [
+        336.5,
+        627.5
+      ],
+      "colorId": 10,
+      "regionId": 28,
+      "polygon": [],
+      "neighbors": [
+        278,
+        305,
+        364,
+        369,
+        371
+      ],
+      "safeAnchor": {
+        "x": 335.5,
+        "y": 626.5,
+        "clearance": 8.0
+      }
+    },
+    {
+      "id": 373,
+      "center": [
+        392.5,
+        624.5
+      ],
+      "colorId": 10,
+      "regionId": 28,
+      "polygon": [],
+      "neighbors": [
+        278,
+        366,
+        368,
+        370,
+        371,
+        375
+      ],
+      "safeAnchor": {
+        "x": 393.5,
+        "y": 626.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 374,
+      "center": [
+        463.5,
+        626.5
+      ],
+      "colorId": 10,
+      "regionId": 28,
+      "polygon": [],
+      "neighbors": [
+        135,
+        141,
+        278,
+        367,
+        370,
+        376
+      ],
+      "safeAnchor": {
+        "x": 462.5,
+        "y": 627.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 375,
+      "center": [
+        415.5,
+        650.5
+      ],
+      "colorId": 10,
+      "regionId": 28,
+      "polygon": [],
+      "neighbors": [
+        278,
+        370,
+        373,
+        376
+      ],
+      "safeAnchor": {
+        "x": 413.5,
+        "y": 647.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 376,
+      "center": [
+        447.5,
+        652.5
+      ],
+      "colorId": 10,
+      "regionId": 28,
+      "polygon": [],
+      "neighbors": [
+        278,
+        370,
+        374,
+        375
+      ],
+      "safeAnchor": {
+        "x": 448.5,
+        "y": 651.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 377,
+      "center": [
+        695.5,
+        570.5
+      ],
+      "colorId": 10,
+      "regionId": 29,
+      "polygon": [],
+      "neighbors": [
+        276,
+        378
+      ],
+      "safeAnchor": {
+        "x": 694.5,
+        "y": 569.5,
+        "clearance": 11.0
+      }
+    },
+    {
+      "id": 378,
+      "center": [
+        682.5,
+        599.5
+      ],
+      "colorId": 10,
+      "regionId": 29,
+      "polygon": [],
+      "neighbors": [
+        133,
+        138,
+        139,
+        144,
+        276,
+        277,
+        377
+      ],
+      "safeAnchor": {
+        "x": 680.5,
+        "y": 599.5,
+        "clearance": 20.0
+      }
+    },
+    {
+      "id": 379,
+      "center": [
+        619.5,
+        598.5
+      ],
+      "colorId": 10,
+      "regionId": 30,
+      "polygon": [],
+      "neighbors": [
+        138,
+        143,
+        277,
+        380
+      ],
+      "safeAnchor": {
+        "x": 620.5,
+        "y": 599.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 380,
+      "center": [
+        591.5,
+        582.5
+      ],
+      "colorId": 10,
+      "regionId": 30,
+      "polygon": [],
+      "neighbors": [
+        136,
+        143,
+        277,
+        379
+      ],
+      "safeAnchor": {
+        "x": 588.5,
+        "y": 597.5,
+        "clearance": 15.0
+      }
+    },
+    {
+      "id": 381,
+      "center": [
+        398.5,
+        922.5
+      ],
+      "colorId": 10,
+      "regionId": 31,
+      "polygon": [],
+      "neighbors": [
+        169,
+        170,
+        383,
+        384
+      ],
+      "safeAnchor": {
+        "x": 390.5,
+        "y": 917.5,
+        "clearance": 12.0
+      }
+    },
+    {
+      "id": 382,
+      "center": [
+        862.5,
+        931.5
+      ],
+      "colorId": 10,
+      "regionId": 31,
+      "polygon": [],
+      "neighbors": [
+        173,
+        174,
+        239,
+        249,
+        385,
+        386,
+        388
+      ],
+      "safeAnchor": {
+        "x": 852.5,
+        "y": 935.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 383,
+      "center": [
+        431.5,
+        952.5
+      ],
+      "colorId": 10,
+      "regionId": 31,
+      "polygon": [],
+      "neighbors": [
+        381,
+        384
+      ],
+      "safeAnchor": {
+        "x": 429.5,
+        "y": 950.5,
+        "clearance": 11.0
+      }
+    },
+    {
+      "id": 384,
+      "center": [
+        468.5,
+        960.5
+      ],
+      "colorId": 10,
+      "regionId": 31,
+      "polygon": [],
+      "neighbors": [
+        170,
+        246,
+        253,
+        381,
+        383,
+        387,
+        389
+      ],
+      "safeAnchor": {
+        "x": 468.5,
+        "y": 961.5,
+        "clearance": 7.0
+      }
+    },
+    {
+      "id": 385,
+      "center": [
+        836.5,
+        956.5
+      ],
+      "colorId": 10,
+      "regionId": 31,
+      "polygon": [],
+      "neighbors": [
+        382
+      ],
+      "safeAnchor": {
+        "x": 835.5,
+        "y": 956.5,
+        "clearance": 9.0
+      }
+    },
+    {
+      "id": 386,
+      "center": [
+        784.5,
+        968.5
+      ],
+      "colorId": 10,
+      "regionId": 31,
+      "polygon": [],
+      "neighbors": [
+        248,
+        249,
+        382,
+        388
+      ],
+      "safeAnchor": {
+        "x": 777.5,
+        "y": 973.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 387,
+      "center": [
+        534.5,
+        983.5
+      ],
+      "colorId": 10,
+      "regionId": 31,
+      "polygon": [],
+      "neighbors": [
+        253,
+        254,
+        257,
+        259,
+        292,
+        384,
+        389,
+        390,
+        391
+      ],
+      "safeAnchor": {
+        "x": 531.5,
+        "y": 982.5,
+        "clearance": 6.0
+      }
+    },
+    {
+      "id": 388,
+      "center": [
+        702.5,
+        992.5
+      ],
+      "colorId": 10,
+      "regionId": 31,
+      "polygon": [],
+      "neighbors": [
+        248,
+        255,
+        256,
+        260,
+        287,
+        288,
+        289,
+        382,
+        386,
+        390
+      ],
+      "safeAnchor": {
+        "x": 724.5,
+        "y": 990.5,
+        "clearance": 11.0
+      }
+    },
+    {
+      "id": 389,
+      "center": [
+        486.5,
+        967.5
+      ],
+      "colorId": 10,
+      "regionId": 31,
+      "polygon": [],
+      "neighbors": [
+        384,
+        387
+      ],
+      "safeAnchor": {
+        "x": 495.5,
+        "y": 979.5,
+        "clearance": 12.0
+      }
+    },
+    {
+      "id": 390,
+      "center": [
+        602.5,
+        990.5
+      ],
+      "colorId": 10,
+      "regionId": 31,
+      "polygon": [],
+      "neighbors": [
+        257,
+        258,
+        260,
+        288,
+        293,
+        387,
+        388,
+        391,
+        392
+      ],
+      "safeAnchor": {
+        "x": 605.5,
+        "y": 990.5,
+        "clearance": 7.0
+      }
+    },
+    {
+      "id": 391,
+      "center": [
+        570.5,
+        1001.5
+      ],
+      "colorId": 10,
+      "regionId": 31,
+      "polygon": [],
+      "neighbors": [
+        292,
+        293,
+        294,
+        387,
+        390
+      ],
+      "safeAnchor": {
+        "x": 555.5,
+        "y": 997.5,
+        "clearance": 7.0
+      }
+    },
+    {
+      "id": 392,
+      "center": [
+        640.5,
+        1007.5
+      ],
+      "colorId": 10,
+      "regionId": 31,
+      "polygon": [],
+      "neighbors": [
+        288,
+        390
+      ],
+      "safeAnchor": {
+        "x": 623.5,
+        "y": 1001.5,
+        "clearance": 8.0
+      }
+    },
+    {
+      "id": 393,
+      "center": [
+        764.5,
+        1061.5
+      ],
+      "colorId": 10,
+      "regionId": 32,
+      "polygon": [],
+      "neighbors": [
+        261,
+        290,
+        395
+      ],
+      "safeAnchor": {
+        "x": 763.5,
+        "y": 1062.5,
+        "clearance": 11.0
+      }
+    },
+    {
+      "id": 394,
+      "center": [
+        713.5,
+        1082.5
+      ],
+      "colorId": 10,
+      "regionId": 32,
+      "polygon": [],
+      "neighbors": [
+        175,
+        261,
+        291,
+        395
+      ],
+      "safeAnchor": {
+        "x": 708.5,
+        "y": 1078.5,
+        "clearance": 13.0
+      }
+    },
+    {
+      "id": 395,
+      "center": [
+        740.5,
+        1091.5
+      ],
+      "colorId": 10,
+      "regionId": 32,
+      "polygon": [],
+      "neighbors": [
+        261,
+        290,
+        291,
+        393,
+        394
+      ],
+      "safeAnchor": {
+        "x": 742.5,
+        "y": 1088.5,
+        "clearance": 16.0
+      }
+    },
+    {
+      "id": 396,
+      "center": [
+        603.5,
+        1085.5
+      ],
+      "colorId": 10,
+      "regionId": 33,
+      "polygon": [],
+      "neighbors": [
+        179,
+        296,
+        398
+      ],
+      "safeAnchor": {
+        "x": 604.5,
+        "y": 1082.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 397,
+      "center": [
+        549.5,
+        1079.5
+      ],
+      "colorId": 10,
+      "regionId": 33,
+      "polygon": [],
+      "neighbors": [
+        178,
+        292,
+        295,
+        398
+      ],
+      "safeAnchor": {
+        "x": 548.5,
+        "y": 1081.5,
+        "clearance": 11.0
+      }
+    },
+    {
+      "id": 398,
+      "center": [
+        575.5,
+        1091.5
+      ],
+      "colorId": 10,
+      "regionId": 33,
+      "polygon": [],
+      "neighbors": [
+        178,
+        179,
+        295,
+        296,
+        396,
+        397
+      ],
+      "safeAnchor": {
+        "x": 573.5,
+        "y": 1089.5,
+        "clearance": 16.0
+      }
+    }
+  ],
+  "regions": [
+    {
+      "id": 0,
+      "colorId": 1,
+      "cellIds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "safeAnchor": {
+        "x": 698.5,
+        "y": 111.5,
+        "clearance": 59.0
+      }
+    },
+    {
+      "id": 1,
+      "colorId": 1,
+      "cellIds": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "safeAnchor": {
+        "x": 828.5,
+        "y": 490.5,
+        "clearance": 47.0
+      }
+    },
+    {
+      "id": 2,
+      "colorId": 1,
+      "cellIds": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "safeAnchor": {
+        "x": 450.5,
+        "y": 524.5,
+        "clearance": 38.0
+      }
+    },
+    {
+      "id": 3,
+      "colorId": 1,
+      "cellIds": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "safeAnchor": {
+        "x": 534.5,
+        "y": 421.5,
+        "clearance": 43.0
+      }
+    },
+    {
+      "id": 4,
+      "colorId": 2,
+      "cellIds": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124
+      ],
+      "safeAnchor": {
+        "x": 543.5,
+        "y": 233.5,
+        "clearance": 124.0
+      }
+    },
+    {
+      "id": 5,
+      "colorId": 2,
+      "cellIds": [
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131
+      ],
+      "safeAnchor": {
+        "x": 728.5,
+        "y": 398.5,
+        "clearance": 44.0
+      }
+    },
+    {
+      "id": 6,
+      "colorId": 3,
+      "cellIds": [
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165
+      ],
+      "safeAnchor": {
+        "x": 749.5,
+        "y": 628.5,
+        "clearance": 61.0
+      }
+    },
+    {
+      "id": 7,
+      "colorId": 3,
+      "cellIds": [
+        166,
+        167,
+        168,
+        169,
+        170
+      ],
+      "safeAnchor": {
+        "x": 432.5,
+        "y": 840.5,
+        "clearance": 32.0
+      }
+    },
+    {
+      "id": 8,
+      "colorId": 3,
+      "cellIds": [
+        171,
+        172,
+        173,
+        174
+      ],
+      "safeAnchor": {
+        "x": 854.5,
+        "y": 882.5,
+        "clearance": 35.0
+      }
+    },
+    {
+      "id": 9,
+      "colorId": 3,
+      "cellIds": [
+        175,
+        176,
+        177
+      ],
+      "safeAnchor": {
+        "x": 703.5,
+        "y": 1163.5,
+        "clearance": 22.0
+      }
+    },
+    {
+      "id": 10,
+      "colorId": 3,
+      "cellIds": [
+        178,
+        179,
+        180,
+        181,
+        182,
+        183
+      ],
+      "safeAnchor": {
+        "x": 591.5,
+        "y": 1148.5,
+        "clearance": 41.0
+      }
+    },
+    {
+      "id": 11,
+      "colorId": 4,
+      "cellIds": [
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201
+      ],
+      "safeAnchor": {
+        "x": 606.5,
+        "y": 740.5,
+        "clearance": 48.0
+      }
+    },
+    {
+      "id": 12,
+      "colorId": 5,
+      "cellIds": [
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260
+      ],
+      "safeAnchor": {
+        "x": 642.5,
+        "y": 898.5,
+        "clearance": 90.0
+      }
+    },
+    {
+      "id": 13,
+      "colorId": 5,
+      "cellIds": [
+        261,
+        262,
+        263
+      ],
+      "safeAnchor": {
+        "x": 757.5,
+        "y": 1134.5,
+        "clearance": 20.0
+      }
+    },
+    {
+      "id": 14,
+      "colorId": 6,
+      "cellIds": [
+        264,
+        265
+      ],
+      "safeAnchor": {
+        "x": 701.5,
+        "y": 240.5,
+        "clearance": 6.0
+      }
+    },
+    {
+      "id": 15,
+      "colorId": 6,
+      "cellIds": [
+        266,
+        267,
+        268
+      ],
+      "safeAnchor": {
+        "x": 814.5,
+        "y": 418.5,
+        "clearance": 23.0
+      }
+    },
+    {
+      "id": 16,
+      "colorId": 6,
+      "cellIds": [
+        269,
+        270,
+        271
+      ],
+      "safeAnchor": {
+        "x": 463.5,
+        "y": 466.5,
+        "clearance": 25.0
+      }
+    },
+    {
+      "id": 17,
+      "colorId": 6,
+      "cellIds": [
+        272,
+        273
+      ],
+      "safeAnchor": {
+        "x": 641.5,
+        "y": 499.5,
+        "clearance": 22.0
+      }
+    },
+    {
+      "id": 18,
+      "colorId": 6,
+      "cellIds": [
+        274,
+        275,
+        276,
+        277
+      ],
+      "safeAnchor": {
+        "x": 642.5,
+        "y": 570.5,
+        "clearance": 21.0
+      }
+    },
+    {
+      "id": 19,
+      "colorId": 6,
+      "cellIds": [
+        278,
+        279,
+        280,
+        281,
+        282,
+        283
+      ],
+      "safeAnchor": {
+        "x": 506.5,
+        "y": 692.5,
+        "clearance": 26.0
+      }
+    },
+    {
+      "id": 20,
+      "colorId": 6,
+      "cellIds": [
+        284,
+        285,
+        286
+      ],
+      "safeAnchor": {
+        "x": 766.5,
+        "y": 695.5,
+        "clearance": 11.0
+      }
+    },
+    {
+      "id": 21,
+      "colorId": 6,
+      "cellIds": [
+        287,
+        288,
+        289,
+        290,
+        291
+      ],
+      "safeAnchor": {
+        "x": 734.5,
+        "y": 1030.5,
+        "clearance": 34.0
+      }
+    },
+    {
+      "id": 22,
+      "colorId": 6,
+      "cellIds": [
+        292,
+        293,
+        294,
+        295,
+        296
+      ],
+      "safeAnchor": {
+        "x": 567.5,
+        "y": 1041.5,
+        "clearance": 34.0
+      }
+    },
+    {
+      "id": 23,
+      "colorId": 7,
+      "cellIds": [
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305
+      ],
+      "safeAnchor": {
+        "x": 304.5,
+        "y": 541.5,
+        "clearance": 25.0
+      }
+    },
+    {
+      "id": 24,
+      "colorId": 8,
+      "cellIds": [
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        327,
+        328,
+        329,
+        330,
+        331,
+        332,
+        333,
+        334,
+        335,
+        336,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345
+      ],
+      "safeAnchor": {
+        "x": 627.5,
+        "y": 388.5,
+        "clearance": 56.0
+      }
+    },
+    {
+      "id": 25,
+      "colorId": 8,
+      "cellIds": [
+        346,
+        347,
+        348,
+        349,
+        350
+      ],
+      "safeAnchor": {
+        "x": 439.5,
+        "y": 698.5,
+        "clearance": 27.0
+      }
+    },
+    {
+      "id": 26,
+      "colorId": 8,
+      "cellIds": [
+        351,
+        352,
+        353,
+        354,
+        355,
+        356,
+        357
+      ],
+      "safeAnchor": {
+        "x": 821.5,
+        "y": 723.5,
+        "clearance": 34.0
+      }
+    },
+    {
+      "id": 27,
+      "colorId": 9,
+      "cellIds": [
+        358,
+        359,
+        360
+      ],
+      "safeAnchor": {
+        "x": 315.5,
+        "y": 474.5,
+        "clearance": 14.0
+      }
+    },
+    {
+      "id": 28,
+      "colorId": 10,
+      "cellIds": [
+        361,
+        362,
+        363,
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376
+      ],
+      "safeAnchor": {
+        "x": 408.5,
+        "y": 605.5,
+        "clearance": 60.0
+      }
+    },
+    {
+      "id": 29,
+      "colorId": 10,
+      "cellIds": [
+        377,
+        378
+      ],
+      "safeAnchor": {
+        "x": 691.5,
+        "y": 589.5,
+        "clearance": 28.0
+      }
+    },
+    {
+      "id": 30,
+      "colorId": 10,
+      "cellIds": [
+        379,
+        380
+      ],
+      "safeAnchor": {
+        "x": 606.5,
+        "y": 599.5,
+        "clearance": 19.0
+      }
+    },
+    {
+      "id": 31,
+      "colorId": 10,
+      "cellIds": [
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392
+      ],
+      "safeAnchor": {
+        "x": 767.5,
+        "y": 975.5,
+        "clearance": 18.0
+      }
+    },
+    {
+      "id": 32,
+      "colorId": 10,
+      "cellIds": [
+        393,
+        394,
+        395
+      ],
+      "safeAnchor": {
+        "x": 744.5,
+        "y": 1084.5,
+        "clearance": 23.0
+      }
+    },
+    {
+      "id": 33,
+      "colorId": 10,
+      "cellIds": [
+        396,
+        397,
+        398
+      ],
+      "safeAnchor": {
+        "x": 565.5,
+        "y": 1096.5,
+        "clearance": 19.0
+      }
+    }
+  ],
+  "assets": {
+    "cellIdMap": "cell_id_map.png",
+    "subjectMask": "subject_mask.png",
+    "settledTexture": "settled_texture.png"
+  },
+  "colorSource": "author-assisted-semantic-color-mask"
+}

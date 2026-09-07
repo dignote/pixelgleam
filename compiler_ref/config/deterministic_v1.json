@@ -1,0 +1,11 @@
+{
+  "compilerVersion": "0.1.0",
+  "mode": "VALIDATE_ONLY",
+  "connectivity": 4,
+  "cellIdBackground": 0,
+  "requireConsecutiveCellIds": true,
+  "requireExactRasterAdjacency": true,
+  "requireMaximalSameColorRegions": true,
+  "settledMasterComparison": "SUBJECT_MASK_PIXELS_BIT_EXACT",
+  "requireTransparentSettledBackground": true
+}

@@ -1,0 +1,108 @@
+{
+  "family": "G02_EFFECT_FAMILY",
+  "version": "1.1",
+  "status": "APPROVED",
+  "paired_gem": "GEM_G02",
+  "assets": {
+    "FX_FLIGHT_TRAIL": {
+      "file": "production/effects/FX_FLIGHT_TRAIL.png",
+      "base_size": [
+        384,
+        384
+      ],
+      "runtime_sizes": [
+        96,
+        128,
+        160,
+        192
+      ],
+      "role": "gem flight travel feedback"
+    },
+    "FX_LANDING_SPARKLE": {
+      "file": "production/effects/FX_LANDING_SPARKLE.png",
+      "base_size": [
+        256,
+        256
+      ],
+      "runtime_sizes": [
+        48,
+        64,
+        80,
+        96
+      ],
+      "role": "localized landing burst"
+    },
+    "FX_LANDING_RING": {
+      "file": "production/effects/FX_LANDING_RING.png",
+      "base_size": [
+        256,
+        256
+      ],
+      "runtime_sizes": [
+        64,
+        96,
+        128,
+        160
+      ],
+      "role": "ground settle cue"
+    },
+    "FX_SETTLE_TWINKLE": {
+      "file": "production/effects/FX_SETTLE_TWINKLE.png",
+      "base_size": [
+        192,
+        192
+      ],
+      "runtime_sizes": [
+        32,
+        48,
+        64,
+        80
+      ],
+      "role": "post-settle micro glint"
+    },
+    "FX_COMPLETION_SHIMMER": {
+      "file": "production/effects/FX_COMPLETION_SHIMMER.png",
+      "base_size": [
+        512,
+        512
+      ],
+      "runtime_sizes": [
+        160,
+        240,
+        320,
+        480
+      ],
+      "role": "completed artwork shimmer sweep"
+    },
+    "FX_GLINT_STAR": {
+      "file": "production/effects/FX_GLINT_STAR.png",
+      "base_size": [
+        192,
+        192
+      ],
+      "runtime_sizes": [
+        24,
+        32,
+        48,
+        64
+      ],
+      "role": "reusable compact specular glint"
+    }
+  },
+  "runtime_rules": {
+    "logical_state_dependency": false,
+    "may_be_skipped": true,
+    "poolable": true,
+    "density_may_degrade_for_performance": true,
+    "no_neon_bloom": true
+  },
+  "qa": "qa/G02_EFFECT_QA_REPORT.json",
+  "preview": "preview/G02_FLIGHT_LANDING_PREVIEW.gif",
+  "qa_summary": {
+    "blockers": 0,
+    "majors": 0,
+    "status": "PASS",
+    "transparent_rgba": true,
+    "density_gate": "PASS"
+  }
+}

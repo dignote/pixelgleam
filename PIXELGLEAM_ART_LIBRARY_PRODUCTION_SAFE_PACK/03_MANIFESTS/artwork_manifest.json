@@ -1,0 +1,67 @@
+[
+  {
+    "id": "A1_blossom_bicycle",
+    "title": "Blossom Bicycle",
+    "category": "object_scene",
+    "target_cells": "340-390",
+    "target_gameplay_colors": "8-10",
+    "reference_priority": [
+      "Flower",
+      "Cupcake"
+    ],
+    "master_prompt": "02_LIBRARY_5_ARTWORKS/master_prompts/A1_blossom_bicycle_MASTER_PROMPT.md",
+    "settled_prompt": "02_LIBRARY_5_ARTWORKS/settled_prompts/A1_blossom_bicycle_SETTLED_GEM_PROMPT.md"
+  },
+  {
+    "id": "A2_royal_koi_pair",
+    "title": "Royal Koi Pair",
+    "category": "symmetry_subject",
+    "target_cells": "360-420",
+    "target_gameplay_colors": "8-10",
+    "reference_priority": [
+      "Mandala",
+      "Flower"
+    ],
+    "master_prompt": "02_LIBRARY_5_ARTWORKS/master_prompts/A2_royal_koi_pair_MASTER_PROMPT.md",
+    "settled_prompt": "02_LIBRARY_5_ARTWORKS/settled_prompts/A2_royal_koi_pair_SETTLED_GEM_PROMPT.md"
+  },
+  {
+    "id": "A3_cozy_tea_corner",
+    "title": "Cozy Tea Corner",
+    "category": "food_scene",
+    "target_cells": "320-370",
+    "target_gameplay_colors": "8-9",
+    "reference_priority": [
+      "Cupcake",
+      "Flower"
+    ],
+    "master_prompt": "02_LIBRARY_5_ARTWORKS/master_prompts/A3_cozy_tea_corner_MASTER_PROMPT.md",
+    "settled_prompt": "02_LIBRARY_5_ARTWORKS/settled_prompts/A3_cozy_tea_corner_SETTLED_GEM_PROMPT.md"
+  },
+  {
+    "id": "A4_moon_fairy_portrait",
+    "title": "Moon Fairy Portrait",
+    "category": "character",
+    "target_cells": "350-410",
+    "target_gameplay_colors": "9-11",
+    "reference_priority": [
+      "Character",
+      "Happy Corgi"
+    ],
+    "master_prompt": "02_LIBRARY_5_ARTWORKS/master_prompts/A4_moon_fairy_portrait_MASTER_PROMPT.md",
+    "settled_prompt": "02_LIBRARY_5_ARTWORKS/settled_prompts/A4_moon_fairy_portrait_SETTLED_GEM_PROMPT.md"
+  },
+  {
+    "id": "A5_lucky_shiba_garden",
+    "title": "Lucky Shiba Garden",
+    "category": "animal_scene",
+    "target_cells": "330-390",
+    "target_gameplay_colors": "8-10",
+    "reference_priority": [
+      "Happy Corgi",
+      "Flower"
+    ],
+    "master_prompt": "02_LIBRARY_5_ARTWORKS/master_prompts/A5_lucky_shiba_garden_MASTER_PROMPT.md",
+    "settled_prompt": "02_LIBRARY_5_ARTWORKS/settled_prompts/A5_lucky_shiba_garden_SETTLED_GEM_PROMPT.md"
+  }
+]

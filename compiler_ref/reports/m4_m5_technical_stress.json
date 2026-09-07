@@ -1,0 +1,246 @@
+{
+  "status": "PASS",
+  "classification": "TECHNICAL_STRESS_ONLY_NOT_PRODUCTION_BENCHMARK",
+  "cases": [
+    {
+      "kind": "flower",
+      "generation": {
+        "status": "PASS",
+        "cell_count": 214,
+        "region_count": 10,
+        "output_dir": "/mnt/data/mosaic_topology_compiler_v1/stress/outputs/flower",
+        "metrics": {
+          "cellAreaMedian": 98.0,
+          "cellAreaMean": 99.99065420560747,
+          "cellAreaCv": 0.14807605949470815,
+          "cellAreaMin": 57,
+          "cellAreaMax": 154,
+          "tinyCellCount": 0,
+          "hugeCellCount": 0,
+          "compactnessMedian": 1.2004403443634386,
+          "compactnessP10": 1.0039249251140936,
+          "semanticBoundaryCrossingCells": 0,
+          "requestedCellTarget": 220,
+          "actualCellCount": 214,
+          "actualRegionCount": 10,
+          "coveragePercent": 100.0,
+          "backgroundLabeledPixels": 0
+        }
+      },
+      "validation": {
+        "status": "PASS",
+        "geometry": {
+          "width": 256,
+          "height": 256,
+          "subjectPixels": 21398,
+          "coveragePercent": 100.0,
+          "uncoveredPixels": 0,
+          "backgroundLabeledPixels": 0,
+          "cellCount": 214,
+          "regionCount": 10,
+          "overlapPixels": 0
+        },
+        "checks": {
+          "cellIdSetMatchesArtworkJson": true,
+          "cellIdsConsecutive": true,
+          "cellConnectivity": true,
+          "adjacencySymmetry": true,
+          "adjacencyExactRasterVsJson": true,
+          "regionColorConsistency": true,
+          "regionConnectivity": true,
+          "regionsAreMaximalSameColorComponents": true,
+          "settledTextureMasterExact": true,
+          "settledBackgroundTransparent": true,
+          "expectedGoldenMetricsMatch": true
+        },
+        "blockers": [],
+        "majors": [],
+        "fixture": {
+          "artworkId": "stress_flower",
+          "version": "compiler-v1.0",
+          "topologyType": "cell-id-raster-v1"
+        }
+      }
+    },
+    {
+      "kind": "mandala",
+      "generation": {
+        "status": "PASS",
+        "cell_count": 245,
+        "region_count": 88,
+        "output_dir": "/mnt/data/mosaic_topology_compiler_v1/stress/outputs/mandala",
+        "metrics": {
+          "cellAreaMedian": 136.0,
+          "cellAreaMean": 142.6204081632653,
+          "cellAreaCv": 0.6614171509604653,
+          "cellAreaMin": 1,
+          "cellAreaMax": 527,
+          "tinyCellCount": 24,
+          "hugeCellCount": 9,
+          "compactnessMedian": 1.0166724589844423,
+          "compactnessP10": 0.5710920580895045,
+          "semanticBoundaryCrossingCells": 0,
+          "requestedCellTarget": 260,
+          "actualCellCount": 245,
+          "actualRegionCount": 88,
+          "coveragePercent": 100.0,
+          "backgroundLabeledPixels": 0
+        }
+      },
+      "validation": {
+        "status": "PASS",
+        "geometry": {
+          "width": 256,
+          "height": 256,
+          "subjectPixels": 34942,
+          "coveragePercent": 100.0,
+          "uncoveredPixels": 0,
+          "backgroundLabeledPixels": 0,
+          "cellCount": 245,
+          "regionCount": 88,
+          "overlapPixels": 0
+        },
+        "checks": {
+          "cellIdSetMatchesArtworkJson": true,
+          "cellIdsConsecutive": true,
+          "cellConnectivity": true,
+          "adjacencySymmetry": true,
+          "adjacencyExactRasterVsJson": true,
+          "regionColorConsistency": true,
+          "regionConnectivity": true,
+          "regionsAreMaximalSameColorComponents": true,
+          "settledTextureMasterExact": true,
+          "settledBackgroundTransparent": true,
+          "expectedGoldenMetricsMatch": true
+        },
+        "blockers": [],
+        "majors": [],
+        "fixture": {
+          "artworkId": "stress_mandala",
+          "version": "compiler-v1.0",
+          "topologyType": "cell-id-raster-v1"
+        }
+      }
+    },
+    {
+      "kind": "food",
+      "generation": {
+        "status": "PASS",
+        "cell_count": 178,
+        "region_count": 3,
+        "output_dir": "/mnt/data/mosaic_topology_compiler_v1/stress/outputs/food",
+        "metrics": {
+          "cellAreaMedian": 110.0,
+          "cellAreaMean": 111.26404494382022,
+          "cellAreaCv": 0.1517594352360049,
+          "cellAreaMin": 78,
+          "cellAreaMax": 165,
+          "tinyCellCount": 0,
+          "hugeCellCount": 0,
+          "compactnessMedian": 1.202680981496243,
+          "compactnessP10": 1.0650707656199887,
+          "semanticBoundaryCrossingCells": 0,
+          "requestedCellTarget": 180,
+          "actualCellCount": 178,
+          "actualRegionCount": 3,
+          "coveragePercent": 100.0,
+          "backgroundLabeledPixels": 0
+        }
+      },
+      "validation": {
+        "status": "PASS",
+        "geometry": {
+          "width": 256,
+          "height": 256,
+          "subjectPixels": 19805,
+          "coveragePercent": 100.0,
+          "uncoveredPixels": 0,
+          "backgroundLabeledPixels": 0,
+          "cellCount": 178,
+          "regionCount": 3,
+          "overlapPixels": 0
+        },
+        "checks": {
+          "cellIdSetMatchesArtworkJson": true,
+          "cellIdsConsecutive": true,
+          "cellConnectivity": true,
+          "adjacencySymmetry": true,
+          "adjacencyExactRasterVsJson": true,
+          "regionColorConsistency": true,
+          "regionConnectivity": true,
+          "regionsAreMaximalSameColorComponents": true,
+          "settledTextureMasterExact": true,
+          "settledBackgroundTransparent": true,
+          "expectedGoldenMetricsMatch": true
+        },
+        "blockers": [],
+        "majors": [],
+        "fixture": {
+          "artworkId": "stress_food",
+          "version": "compiler-v1.0",
+          "topologyType": "cell-id-raster-v1"
+        }
+      }
+    },
+    {
+      "kind": "character",
+      "generation": {
+        "status": "PASS",
+        "cell_count": 224,
+        "region_count": 5,
+        "output_dir": "/mnt/data/mosaic_topology_compiler_v1/stress/outputs/character",
+        "metrics": {
+          "cellAreaMedian": 109.0,
+          "cellAreaMean": 110.38839285714286,
+          "cellAreaCv": 0.16829818503758492,
+          "cellAreaMin": 74,
+          "cellAreaMax": 171,
+          "tinyCellCount": 0,
+          "hugeCellCount": 0,
+          "compactnessMedian": 1.2005789289705953,
+          "compactnessP10": 1.0140791540856036,
+          "semanticBoundaryCrossingCells": 0,
+          "requestedCellTarget": 240,
+          "actualCellCount": 224,
+          "actualRegionCount": 5,
+          "coveragePercent": 100.0,
+          "backgroundLabeledPixels": 0
+        }
+      },
+      "validation": {
+        "status": "PASS",
+        "geometry": {
+          "width": 256,
+          "height": 256,
+          "subjectPixels": 24727,
+          "coveragePercent": 100.0,
+          "uncoveredPixels": 0,
+          "backgroundLabeledPixels": 0,
+          "cellCount": 224,
+          "regionCount": 5,
+          "overlapPixels": 0
+        },
+        "checks": {
+          "cellIdSetMatchesArtworkJson": true,
+          "cellIdsConsecutive": true,
+          "cellConnectivity": true,
+          "adjacencySymmetry": true,
+          "adjacencyExactRasterVsJson": true,
+          "regionColorConsistency": true,
+          "regionConnectivity": true,
+          "regionsAreMaximalSameColorComponents": true,
+          "settledTextureMasterExact": true,
+          "settledBackgroundTransparent": true,
+          "expectedGoldenMetricsMatch": true
+        },
+        "blockers": [],
+        "majors": [],
+        "fixture": {
+          "artworkId": "stress_character",
+          "version": "compiler-v1.0",
+          "topologyType": "cell-id-raster-v1"
+        }
+      }
+    }
+  ]
+}

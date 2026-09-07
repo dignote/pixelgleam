@@ -1,0 +1,14 @@
+{
+  "artwork": "A1_blossom_bicycle",
+  "coveragePct": 100.0,
+  "cells": 400,
+  "regions": 100,
+  "colors": 12,
+  "disconnectedCells": 0,
+  "disconnectedRegions": 0,
+  "sameColorTouchConflicts": 0,
+  "cellAnchorFailures": 0,
+  "regionAnchorFailures": 0,
+  "allCanvasPixelsPlayable": true,
+  "status": "PASS"
+}

@@ -1,0 +1,14 @@
+{
+  "artwork": "A4_moon_fairy_portrait",
+  "coveragePct": 100.0,
+  "cells": 424,
+  "regions": 107,
+  "colors": 12,
+  "disconnectedCells": 0,
+  "disconnectedRegions": 0,
+  "sameColorTouchConflicts": 0,
+  "cellAnchorFailures": 0,
+  "regionAnchorFailures": 0,
+  "allCanvasPixelsPlayable": true,
+  "status": "PASS"
+}

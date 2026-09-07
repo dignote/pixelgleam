@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "transformHitTest": {
+    "cases": 600,
+    "failures": 0,
+    "samples": []
+  },
+  "regionCompletionExactlyOnce": true,
+  "wrongColorNoProgressMutation": true,
+  "saveRestoreExactRegionSet": true,
+  "allRegionsCompletable": true,
+  "note": "Content/runtime contract simulation only; Android gesture arbitration, lifecycle and Compose rendering require app integration."
+}

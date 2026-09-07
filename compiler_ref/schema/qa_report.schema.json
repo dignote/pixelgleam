@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PixelGleam Mosaic Topology QA Report V1",
+  "type": "object",
+  "required": ["status", "geometry", "checks", "blockers", "majors", "fixture"],
+  "properties": {
+    "status": {"enum": ["PASS", "REWORK", "BLOCKED"]},
+    "geometry": {"type": "object"},
+    "checks": {"type": "object", "additionalProperties": {"type": "boolean"}},
+    "blockers": {"type": "array", "items": {"type": "string"}},
+    "majors": {"type": "array", "items": {"type": "string"}},
+    "fixture": {"type": "object"}
+  }
+}
